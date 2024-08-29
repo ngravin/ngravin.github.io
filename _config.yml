@@ -71,7 +71,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-acm_id: https://dl.acm.org/profile/81453662072 # your dl.acm.org/profile/id
+acm_id: dl.acm.org/profile/81453662072 # your dl.acm.org/profile/id
 dblp_url: https://dblp.org/pid/78/7611.html # your DBLP profile url
 discord_id: # your discord id (18-digit unique numerical identifier)
 facebook_id: # your facebook id
@@ -95,12 +95,12 @@ scopus_id: # your profile on Scopus
 semanticscholar_id: # your Semantic Scholar ID
 stackoverflow_id: # your stackoverflow id
 telegram_username: # your Telegram user name
-wechat_qr: Wechat_QR_Code.jpg # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
+wechat_qr: Wechat_QR.jpg # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 wikidata_id: # your wikidata id
 wikipedia_id: # your wikipedia id (Case sensitive)
 work_url: https://itcs.sufe.edu.cn/FullwtimeFaculty/list.htm # work page URL
-youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
+
 
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
