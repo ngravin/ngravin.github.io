@@ -3,113 +3,43 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@inproceedings{BidderSelection_2024,
+author = {Gravin, Nikolai and Xu, Yixuan Even and Zhou, Renfei},
+title = {Bidder Selection Problem in Position Auctions: A Fast and Simple Algorithm via Poisson Approximation},
+year = {2024},
+isbn = {9798400701719},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3589334.3645418},
+doi = {10.1145/3589334.3645418},
+abstract = {In the Bidder Selection Problem (BSP) there is a large pool of n potential advertisers competing for ad slots on the user's web page. Due to strict computational restrictions, the advertising platform can run a proper auction only for a fraction k<n of advertisers. We consider the basic optimization problem underlying BSP: given n independent prior distributions, how to efficiently find a subset of k with the objective of either maximizing expected social welfare or revenue of the platform. We study BSP in the classic multi-winner model of position auctions for welfare and revenue objectives using the optimal (respectively, VCG mechanism, or Myerson's auction) format for the selected set of bidders. This is a natural generalization of the fundamental problem of selecting k out of n random variables in a way that the expected highest value is maximized. Previous PTAS results ([Chen, Hu, Li, Li, Liu, Lu, NIPS 2016], [Mehta, Nadav, Psomas, Rubinstein, NIPS 2020], [Segev and Singla, EC 2021]) for BSP optimization were only known for single-item auctions and in case of [Segev and Singla 2021] for l-unit auctions. More importantly, all of these PTASes were computational complexity results with impractically large running times, which defeats the purpose of using these algorithms under severe computational constraints. We propose a novel Poisson relaxation of BSP for position auctions that immediately implies that 1) BSP is polynomial-time solvable up to a vanishingly small error as the problem size k grows; 2) there is a PTAS for position auctions after combining our relaxation with the trivial brute force algorithm. Unlike all previous PTASes, we implemented our algorithm and did extensive numerical experiments on practically relevant input sizes. First, our experiments corroborate the previous experimental findings of Mehta et al. that a few simple heuristics used in practice (e.g., Greedy for general submodular maximization) perform surprisingly well in terms of approximation factor. Furthermore, our algorithm outperforms Greedy both in running time and approximation on medium and large-sized instances, i.e., its running time scales better with the instance size.},
+booktitle = {Proceedings of the ACM Web Conference 2024},
+pages = {89–98},
+numpages = {10},
+keywords = {bidder selection, position auctions, submodular maximization},
+location = {Singapore, Singapore},
+series = {WWW '24}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@article{PI_matching_23,
+author = {Gravin, Nick and Wang, Hongao},
+title = {Prophet Inequality for Bipartite Matching: Merits of Being Simple and Nonadaptive},
+year = {2023},
+issue_date = {February 2023},
+publisher = {INFORMS},
+address = {Linthicum, MD, USA},
+volume = {48},
+number = {1},
+issn = {0364-765X},
+url = {https://doi.org/10.1287/moor.2022.1251},
+doi = {10.1287/moor.2022.1251},
+abstract = {We consider the Bayesian online selection problem of a matching in bipartite graphs, that is, the weighted online matching problem where the edges arrive online and edge weights are generated from a known distribution. This setting corresponds to the intersection of two matroids in the work of Kleinberg and Weinberg [40] and Feldman et al. [27]. We study a simple class of nonadaptive policies that we call vertex-additive policies. A vertex-additive policy assigns static prices to every vertex in the graph and accepts only those edges whose weight exceeds the sum of the prices on the edge endpoints. We show that there exists a vertex-additive policy with the expected payoff of at least one-third of the prophet’s payoff and present a gradient descent algorithm that quickly converges to the desired vector of vertex prices. Our results improve on the adaptive online policies of Kleinberg and Weinberg and Feldman et al. for the intersection of two matroids in two ways: our policy is nonadaptive and has a better approximation guarantee of 3 instead of the previous guarantees of 5.82 in Kleinberg and Weinberg and 5.43 in Feldman et al. We give a complementary lower bound of 2.25 for any online algorithm in the bipartite matching setting.Funding: This work was supported by Fundamental Research Funds of the Central Universities in China, a Science and Technology Innovation 2030 major project [“New Generation of Artificial Intelligence,” Project 2018AAA0100903], the Shanghai Municipal Education Commission Innovation Program, and the Program for Innovative Research Team of the Shanghai University of Finance and Economics (IRTSHUFE).},
+journal = {Math. Oper. Res.},
+month = {feb},
+pages = {38–52},
+numpages = {15},
+keywords = {nonadaptive thresholds, edge arrivals, online matching, prophet inequality, secondary: 90C27, 68Q87, Primary: 68W27}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
-}
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
-}
