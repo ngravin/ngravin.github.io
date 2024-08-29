@@ -103,7 +103,7 @@ work_url: https://itcs.sufe.edu.cn/FullwtimeFaculty/list.htm # work page URL
 
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  The best way to reach me is by email or wechat.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -282,7 +282,7 @@ scholar:
 # Customize badge behavior in _layouts/bib.liquid
 enable_publication_badges:
   google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
-  
+
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
