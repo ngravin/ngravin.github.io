@@ -4,7 +4,7 @@
 @string{aps = {American Physical Society,}}
 
 @inproceedings{BidderSelection_2024,
-author = {Gravin, Nikolai and Xu, Yixuan Even and Zhou, Renfei},
+author = {Gravin, Nick and Xu, Yixuan Even and Zhou, Renfei},
 title = {Bidder Selection Problem in Position Auctions: A Fast and Simple Algorithm via Poisson Approximation},
 year = {2024},
 isbn = {9798400701719},
@@ -12,14 +12,21 @@ publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 url = {https://doi.org/10.1145/3589334.3645418},
 doi = {10.1145/3589334.3645418},
-abstract = {In the Bidder Selection Problem (BSP) there is a large pool of n potential advertisers competing for ad slots on the user's web page. Due to strict computational restrictions, the advertising platform can run a proper auction only for a fraction k<n of advertisers. We consider the basic optimization problem underlying BSP: given n independent prior distributions, how to efficiently find a subset of k with the objective of either maximizing expected social welfare or revenue of the platform. We study BSP in the classic multi-winner model of position auctions for welfare and revenue objectives using the optimal (respectively, VCG mechanism, or Myerson's auction) format for the selected set of bidders. This is a natural generalization of the fundamental problem of selecting k out of n random variables in a way that the expected highest value is maximized. Previous PTAS results ([Chen, Hu, Li, Li, Liu, Lu, NIPS 2016], [Mehta, Nadav, Psomas, Rubinstein, NIPS 2020], [Segev and Singla, EC 2021]) for BSP optimization were only known for single-item auctions and in case of [Segev and Singla 2021] for l-unit auctions. More importantly, all of these PTASes were computational complexity results with impractically large running times, which defeats the purpose of using these algorithms under severe computational constraints. We propose a novel Poisson relaxation of BSP for position auctions that immediately implies that 1) BSP is polynomial-time solvable up to a vanishingly small error as the problem size k grows; 2) there is a PTAS for position auctions after combining our relaxation with the trivial brute force algorithm. Unlike all previous PTASes, we implemented our algorithm and did extensive numerical experiments on practically relevant input sizes. First, our experiments corroborate the previous experimental findings of Mehta et al. that a few simple heuristics used in practice (e.g., Greedy for general submodular maximization) perform surprisingly well in terms of approximation factor. Furthermore, our algorithm outperforms Greedy both in running time and approximation on medium and large-sized instances, i.e., its running time scales better with the instance size.},
+abstract = {In the Bidder Selection Problem (BSP) there is a large pool of n potential advertisers competing for ad slots on the user's web page. Due to strict computational restrictions, the advertising platform can run a proper auction only for a fraction $k<n$ of advertisers. We consider the basic optimization problem underlying BSP: given n independent prior distributions, how to efficiently find a subset of $k$ with the objective of either maximizing expected social welfare or revenue of the platform. We study BSP in the classic multi-winner model of position auctions for welfare and revenue objectives using the optimal (respectively, VCG mechanism, or Myerson's auction) format for the selected set of bidders. This is a natural generalization of the fundamental problem of selecting k out of n random variables in a way that the expected highest value is maximized. Previous PTAS results ([Chen, Hu, Li, Li, Liu, Lu, NIPS 2016], [Mehta, Nadav, Psomas, Rubinstein, NIPS 2020], [Segev and Singla, EC 2021]) for BSP optimization were only known for single-item auctions and in case of [Segev and Singla 2021] for l-unit auctions. More importantly, all of these PTASes were computational complexity results with impractically large running times, which defeats the purpose of using these algorithms under severe computational constraints. We propose a novel Poisson relaxation of BSP for position auctions that immediately implies that 1) BSP is polynomial-time solvable up to a vanishingly small error as the problem size k grows; 2) there is a PTAS for position auctions after combining our relaxation with the trivial brute force algorithm. Unlike all previous PTASes, we implemented our algorithm and did extensive numerical experiments on practically relevant input sizes. First, our experiments corroborate the previous experimental findings of Mehta et al. that a few simple heuristics used in practice (e.g., Greedy for general submodular maximization) perform surprisingly well in terms of approximation factor. Furthermore, our algorithm outperforms Greedy both in running time and approximation on medium and large-sized instances, i.e., its running time scales better with the instance size.},
 booktitle = {Proceedings of the ACM Web Conference 2024},
 pages = {89–98},
 numpages = {10},
 keywords = {bidder selection, position auctions, submodular maximization},
 location = {Singapore, Singapore},
 series = {WWW '24},
-abbr = {WWW}
+
+abbr = {WWW 24},
+arxiv={2306.10648},
+pdf={WWW_2024/www2024bidder-selection.pdf},
+slides={WWW_2024/www2024bidder-selection-slides.pdf},
+poster={WWW_2024/www2024bidder-selection-poster.pdf},
+video = {BSP_WWW24.mp4},
+note = {Selected for <b>Oral Presentation</b>}
 }
 
 @article{PI_matching_23,
@@ -34,7 +41,7 @@ number = {1},
 issn = {0364-765X},
 url = {https://doi.org/10.1287/moor.2022.1251},
 doi = {10.1287/moor.2022.1251},
-abstract = {We consider the Bayesian online selection problem of a matching in bipartite graphs, that is, the weighted online matching problem where the edges arrive online and edge weights are generated from a known distribution. This setting corresponds to the intersection of two matroids in the work of Kleinberg and Weinberg [40] and Feldman et al. [27]. We study a simple class of nonadaptive policies that we call vertex-additive policies. A vertex-additive policy assigns static prices to every vertex in the graph and accepts only those edges whose weight exceeds the sum of the prices on the edge endpoints. We show that there exists a vertex-additive policy with the expected payoff of at least one-third of the prophet’s payoff and present a gradient descent algorithm that quickly converges to the desired vector of vertex prices. Our results improve on the adaptive online policies of Kleinberg and Weinberg and Feldman et al. for the intersection of two matroids in two ways: our policy is nonadaptive and has a better approximation guarantee of 3 instead of the previous guarantees of 5.82 in Kleinberg and Weinberg and 5.43 in Feldman et al. We give a complementary lower bound of 2.25 for any online algorithm in the bipartite matching setting.Funding: This work was supported by Fundamental Research Funds of the Central Universities in China, a Science and Technology Innovation 2030 major project [“New Generation of Artificial Intelligence,” Project 2018AAA0100903], the Shanghai Municipal Education Commission Innovation Program, and the Program for Innovative Research Team of the Shanghai University of Finance and Economics (IRTSHUFE).},
+abstract = {We consider the Bayesian online selection problem of a matching in bipartite graphs, that is, the weighted online matching problem where the edges arrive online and edge weights are generated from a known distribution. This setting corresponds to the intersection of two matroids in the work of Kleinberg and Weinberg [40] and Feldman et al. [27]. We study a simple class of nonadaptive policies that we call vertex-additive policies. A vertex-additive policy assigns static prices to every vertex in the graph and accepts only those edges whose weight exceeds the sum of the prices on the edge endpoints. We show that there exists a vertex-additive policy with the expected payoff of at least one-third of the prophet’s payoff and present a gradient descent algorithm that quickly converges to the desired vector of vertex prices. Our results improve on the adaptive online policies of Kleinberg and Weinberg and Feldman et al. for the intersection of two matroids in two ways: our policy is nonadaptive and has a better approximation guarantee of $3$ instead of the previous guarantees of $5.82$ in Kleinberg and Weinberg and $5.43$ in Feldman et al. We give a complementary lower bound of $2.25$ for any online algorithm in the bipartite matching setting.},
 journal = {Math. Oper. Res.},
 month = {feb},
 pages = {38–52},
@@ -43,5 +50,1393 @@ keywords = {nonadaptive thresholds, edge arrivals, online matching, prophet ineq
 abbr = {MOR}
 }
 
+@inproceedings{PI_MarkovChains23,
+author = {Jia, Jianhao and Li, Hao and Liu, Kai and Liu, Ziqi and Zhou, Jun and Gravin, Nikolai and Tang, Zhihao Gavin},
+title = {Online resource allocation in Markov Chains},
+year = {2023},
+isbn = {9781450394161},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3543507.3583428},
+doi = {10.1145/3543507.3583428},
+abstract = {A large body of work in Computer Science and Operations Research study online algorithms for stochastic resource allocation problems. The most common assumption is that the online requests have randomly generated i.i.d. types. This assumption is well justified for static markets and/or relatively short time periods. We consider dynamic markets, whose states evolve as a random walk in a market-specific Markov Chain. This is a new model that generalizes previous i.i.d. settings. We identify important parameters of the Markov chain that is crucial for obtaining good approximation guarantees to the expected value of the optimal offline algorithm which knows realizations of all requests in advance. We focus on a stylized single-resource setting and: (i) generalize the well-known Prophet Inequality from the optimal stopping theory (single-unit setting) to Markov Chain setting; (ii) in multi-unit setting, design a simple algorithm that is asymptotically optimal under mild assumptions on the underlying Markov chain.},
+booktitle = {Proceedings of the ACM Web Conference 2023},
+pages = {3498–3507},
+numpages = {10},
+location = {Austin, TX, USA},
+series = {WWW '23},
+abbr = {WWW 23}
+}
+
+@inproceedings{PI_LessSample22,
+author = {Gravin, Nick and Li, Hao and Tang, Zhihao Gavin},
+title = {Optimal Prophet Inequality with Less than One Sample},
+year = {2022},
+isbn = {978-3-031-22831-5},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-3-031-22832-2_7},
+doi = {10.1007/978-3-031-22832-2_7},
+abstract = {There is a growing interest in studying sample-based prophet inequality with the motivation stemming from the connection between the prophet inequalities and the sequential posted pricing mechanisms. Rubinstein, Wang, and Weinberg (ITCS 2021) established the optimal single-choice prophet inequality with only a single sample per each distribution. Our work considers the sample-based prophet inequality with less than one sample per distribution, i.e., scenarios with no prior information about some of the random variables. Specifically, we propose a $p$-sample model, where a sample from each distribution is revealed with probability $p\in [0,1]$ independently across all distributions. This model generalizes the single-sample setting of Rubinstein, Wang, and Weinberg (ITCS 2021), and the i.i.d. prophet inequality with a linear number of samples of Correa et al. (EC 2019). Our main result is the optimal $p/(1+p)$ prophet inequality for all $p\in[0,1]$.},
+booktitle = {Web and Internet Economics: 18th International Conference, WINE 2022, Troy, NY, USA, December 12–15, 2022, Proceedings},
+pages = {115–131},
+numpages = {17},
+keywords = {Prophet inequality, Online algorithms, Optimization with samples},
+location = {Troy, NY, USA},
+abbr = {WINE}
+}
+
+@inproceedings{LookAhead_Pooling22,
+author = {Feldman, Michal and Gravin, Nick and Tang, Zhihao Gavin and Wald, Almog},
+title = {Lookahead Auctions with Pooling},
+year = {2022},
+isbn = {978-3-031-15713-4},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-3-031-15714-1_4},
+doi = {10.1007/978-3-031-15714-1_4},
+abstract = {A Lookahead Auction (LA), introduced by Ronen, is an auction format for the sale of a single item among multiple buyers, which is considered simpler and more fair than the optimal auction. Indeed, it anonymously selects a provisional winner by a symmetric ascending-price process, and only then uses a personalized posted price. A LA auction extracts at least $1/2$ of the optimal revenue, even under a correlated value distribution. This bound is tight, even for $2$ buyers with independent values. We introduce a natural extension of LA, called lookahead with pooling (LAP). A LAP auction proceeds as LA, with one difference: it allows the seller to pool together a range of values during the ascending-price stage, and treat them the same; thus, it preserves the simplicity and fairness of LA. Our main result is that this simple pooling operation improves the revenue guarantees for independent buyers from $1/2$ to $4/7$ of the optimal revenue. We also give a complementary negative result, showing that for arbitrary correlated priors LAP cannot do better than $1/2$ approximation.},
+booktitle = {Algorithmic Game Theory: 15th International Symposium, SAGT 2022, Colchester, UK, September 12–15, 2022, Proceedings},
+pages = {60–77},
+numpages = {18},
+keywords = {Auction Design, Revenue Maximization, Lookahead Auctions},
+location = {Colchester, United Kingdom},
+abbr = {SAGT}
+}
+
+@inproceedings{ContentionR_GeneralGraphs22,
+author = {Ezra, Tomer and Feldman, Michal and Gravin, Nick and Tang, Zhihao Gavin},
+title = {General Graphs are Easier than Bipartite Graphs: Tight Bounds for Secretary Matching},
+year = {2022},
+isbn = {9781450391504},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3490486.3538290},
+doi = {10.1145/3490486.3538290},
+abstract = {Online algorithms for secretary matching in bipartite weighted graphs have been studied extensively in recent years. We generalize this study to secretary matching in general weighted graphs, for both vertex and edge arrival models.Under vertex arrival, vertices arrive online in a uniformly random order; upon the arrival of a vertex v, the weights of edges from v to all previously arriving vertices are revealed, and the algorithm decides which of these edges, if any, to include in the matching. We provide a tight $5/12$-competitive algorithm for this setting. Interestingly, it outperforms the best possible algorithm for secretary matching in bipartite graphs with 1-sided arrival, which cannot be better than 1/e-competitive.Under edge arrival, edges arrive online in a uniformly random order; upon the arrival of an edge e, its weight is revealed, and the algorithm decides whether to include it in the matching or not. For this setting we provide a $1/4$-competitive algorithm, which improves upon the state of the art bound.},
+booktitle = {Proceedings of the 23rd ACM Conference on Economics and Computation},
+pages = {1148–1177},
+numpages = {30},
+keywords = {online matching, secretary problem},
+location = {Boulder, CO, USA},
+series = {EC '22},
+abbr = {EC}
+}
+
+@inproceedings{Bayesian_ClockAuctions22,
+author = {Feldman, Michal and Gkatzelis, Vasilis and Gravin, Nick and Schoepflin, Daniel},
+title = {Bayesian and Randomized Clock Auctions},
+year = {2022},
+isbn = {9781450391504},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3490486.3538247},
+doi = {10.1145/3490486.3538247},
+abstract = {In a single-parameter mechanism design problem, a provider is looking to sell some service to a group of potential buyers. Each buyer i has a private value vi for receiving this service, and some feasibility constraint restricts which subsets of buyers can be served simultaneously. Recent work in economics introduced (deferred-acceptance) clock auctions as a superior class of auctions for this problem, due to their transparency, simplicity, and very strong incentive guarantees. Subsequent work in computer science focused on evaluating these auctions with respect to their social welfare approximation guarantees, leading to strong impossibility results: in the absence of prior information regarding the buyers' values, no deterministic clock auction can achieve a bounded approximation, even for simple feasibility constraints with only two maximal feasible sets.We show that these negative results can be circumvented either by using access to prior information or by leveraging randomization. In particular, we provide clock auctions that give a $O(log log k)$ approximation for general downward-closed feasibility constraints with k maximal feasible sets, for three different information models, ranging from full access to the value distributions to complete absence of information. The more information the seller has, the simpler and more practical these auctions are. Under full access, we use a particularly simple deterministic clock auction, called a single-price clock auction, which is only slightly more complex than posted price mechanisms. In this auction, each buyer is offered a single price, then a feasible set is selected among those who accept their offers. In the other extreme, where no prior information is available, this approximation guarantee is obtained using a complex randomized clock auction. In addition to our main results, we propose a parameterization that interpolates between single-price clock auctions and general clock auctions, paving the way for an exciting line of future research.},
+booktitle = {Proceedings of the 23rd ACM Conference on Economics and Computation},
+pages = {820–845},
+numpages = {26},
+keywords = {obvious strategyproofness, clock auctions},
+location = {Boulder, CO, USA},
+series = {EC '22},
+abbr = {EC}
+}
+
+@article{PI_MatchingTwoSidedArrivals22,
+author = {Ezra, Tomer and Feldman, Michal and Gravin, Nick and Tang, Zhihao Gavin},
+title = {Prophet Matching with General Arrivals},
+year = {2022},
+issue_date = {May 2022},
+publisher = {INFORMS},
+address = {Linthicum, MD, USA},
+volume = {47},
+number = {2},
+issn = {0364-765X},
+url = {https://doi.org/10.1287/moor.2021.1152},
+doi = {10.1287/moor.2021.1152},
+abstract = {We provide prophet inequality algorithms for online weighted matching in general (nonbipartite) graphs, under two well-studied arrival models: edge arrival and vertex arrival. The weights of the edges are drawn from a priori known probability distribution. Under edge arrival, the weight of each edge is revealed on arrival, and the algorithm decides whether to include it in the matching or not. Under vertex arrival, the weights of all edges from the newly arriving vertex to all previously arrived vertices are revealed, and the algorithm decides which of these edges, if any, to include in the matching. To study these settings, we introduce a novel unified framework of batched-prophet inequalities that captures online settings where elements arrive in batches. Our algorithms rely on the construction of suitable online contention resolution scheme (OCRS). We first extend the framework of OCRS to batched-OCRS, we then establish a reduction from batched-prophet inequality to batched-OCRS, and finally we construct batched-OCRSs with selectable ratios of $0.337$ and $0.5$ for edge and vertex arrival models, respectively. Both results improve the state of the art for the corresponding settings. For vertex arrival, our result is tight. Interestingly, a pricing-based prophet inequality with comparable competitive ratios is unknown.},
+journal = {Math. Oper. Res.},
+month = {may},
+pages = {878–898},
+numpages = {21},
+keywords = {Primary: 68W27, secondary: 90C27, 68Q87, prophet inequality, online matching, online stochastic matching, online contention resolution scheme},
+abbr = {MOR}
+}
+
+@inproceedings{k_Independence_SPP21,
+author = {Caragiannis, Ioannis and Gravin, Nick and Lu, Pinyan and Wang, Zihe},
+title = {Relaxing the Independence Assumption in Sequential Posted Pricing, Prophet Inequality, and Random Bipartite Matching},
+year = {2021},
+isbn = {978-3-030-94675-3},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-3-030-94676-0_8},
+doi = {10.1007/978-3-030-94676-0_8},
+abstract = {We reexamine three classical settings of optimization under uncertainty, which have been extensively studied in the past, assuming that the several random events involved are mutually independent. Here, we assume that such events are only pair-wise independent; this gives rise to a much richer space of instances. Our aim has been to explore whether positive results are possible even under the more general assumptions. We show that this is indeed the case.Indicatively, we show that, when applied to pair-wise independent distributions of buyer values, sequential posted pricing mechanisms get at least 11.299 of the revenue they get from mutually independent distributions with the same marginals. We also adapt the well-known prophet inequality to pair-wise independent distributions of prize values to get a $1/3$-approximation using a non-standard uniform threshold strategy. Finally, in a stochastic model of generating random bipartite graphs with pair-wise independence on the edges, we show that the expected size of the maximum matching is large but considerably smaller than in Erd\H{o}s-Renyi random graph models where edges are selected independently. Our techniques include a technical lemma that might find applications in other interesting settings involving pair-wise independence.},
+booktitle = {Web and Internet Economics: 17th International Conference, WINE 2021, Potsdam, Germany, December 14–17, 2021, Proceedings},
+pages = {131–148},
+numpages = {18},
+keywords = {Bipartite matching, Revenue maximization, Prophet inequality, Auctions, Posted pricing},
+location = {Potsdam, Germany},
+abbr = {WINE}
+}
+
+@inproceedings{k_Independence_CRYPTO21,
+author = {Gravin, Nick and Guo, Siyao and Kwok, Tsz Chiu and Lu, Pinyan},
+title = {Concentration bounds for almost k-wise independence with applications to non-uniform security},
+year = {2021},
+isbn = {9781611976465},
+publisher = {Society for Industrial and Applied Mathematics},
+address = {USA},
+abstract = {We prove a few concentration inequalities for the sum of $n$ binary random variables under weaker conditions than $k$-wise independence.
+Namely, we consider two standard conditions that are satisfied in many applications: (a) direct product conditions (b) the XOR condition. Both
+conditions are weaker than mutual independence and both imply strong concentration bounds (similar to Chernoff-Hoeffding) on the tail probability of
+the sum of bounded random variables ([Impagliazzo and Kabanets, APPROX-RANDOM 10], [Unger, FOCS 09]).
+Our inequalities can be stated as the implication of threshold direct product theorems from either $k$-wise direct product conditions, or the $k$-wise
+XOR condition. By proving optimality of our inequalities, we show a clear separation for $k \ll n$ between $k$-wise product conditions and XOR condition
+as well as a stark contrast between $k$-wise and $n$-wise product theorems. We use these bounds in the cryptographic application that provides provable
+security against algorithms with $S$-bit advice. Namely, we show how the problem reduces to proving $S$-wise direct product theorems or $S$-wise XOR lemmas
+for certain ranges of parameters. Finally, we derive a new $S$-wise XOR lemma, which yields a tight non-uniform bound for length increasing pseudorandom
+generators, resolving a 10-year-old open problem from [De, Trevisan, and Tulsiani, CRYPTO 10].},
+pages = {2404–2423},
+numpages = {20},
+location = {Virtual Event, Virginia},
+series = {SODA '21},
+abbr = {SODA}
+}
+
+@article{Budget_AdditiveBuyer21,
+author = {Cheng, Yu and Gravin, Nick and Munagala, Kamesh and Wang, Kangning},
+title = {A Simple Mechanism for a Budget-Constrained Buyer},
+year = {2021},
+issue_date = {June 2021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {9},
+number = {2},
+issn = {2167-8375},
+url = {https://doi.org/10.1145/3434419},
+doi = {10.1145/3434419},
+abstract = {We study a classic Bayesian mechanism design setting of monopoly problem for an additive buyer in the presence of budgets. In this setting, a monopolist seller with m heterogeneous items faces a single buyer and seeks to maximize her revenue. The buyer has a budget and additive valuations drawn independently for each item from (non-identical) distributions. We show that when the buyer’s budget is publicly known, it is better to sell each item separately; selling the grand bundle extracts a constant fraction of the optimal revenue. When the budget is private, we consider a standard Bayesian setting where buyer’s budget b is drawn from a known distribution B. We show that if b is independent of the valuations (which is necessary) and distribution B satisfies monotone hazard rate condition, then selling items separately or in a grand bundle is still approximately optimal.},
+journal = {ACM Trans. Econ. Comput.},
+month = {jan},
+articleno = {10},
+numpages = {25},
+keywords = {Auctions, budget, revenue maximization, simple mechanisms},
+abbr = {TEAC}
+}
+
+@article{Budget_Feasible_Additive20,
+author = {Gravin, Nick and Jin, Yaonan and Lu, Pinyan and Zhang, Chenhao},
+title = {Optimal Budget-Feasible Mechanisms for Additive Valuations},
+year = {2020},
+issue_date = {November 2020},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {8},
+number = {4},
+issn = {2167-8375},
+url = {https://doi.org/10.1145/3417746},
+doi = {10.1145/3417746},
+abstract = {In this article, we show a tight approximation guarantee for budget-feasible mechanisms with an additive buyer. We propose a new simple randomized mechanism with approximation ratio of 2, improving the previous best known result of 3. Our bound is tight with respect to either the optimal offline benchmark or its fractional relaxation. We also present a simple deterministic mechanism with the tight approximation guarantee of $3$ against the fractional optimum, improving the best known result of $(2+ √2)$ for the weaker integral benchmark.},
+journal = {ACM Trans. Econ. Comput.},
+month = {oct},
+articleno = {21},
+numpages = {15},
+keywords = {mechanism design, approximation, Budget-feasible auction},
+abbr = {TEAC}
+}
+
+@inproceedings{PI_MatchingVertexEdgesArrivals20,
+author = {Ezra, Tomer and Feldman, Michal and Gravin, Nick and Tang, Zhihao Gavin},
+title = {Online Stochastic Max-Weight Matching: Prophet Inequality for Vertex and Edge Arrival Models},
+year = {2020},
+isbn = {9781450379755},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3391403.3399513},
+doi = {10.1145/3391403.3399513},
+abstract = {We provide prophet inequality algorithms for online weighted matching in general (non-bipartite) graphs, under two well-studied arrival models, namely edge arrival and vertex arrival. The weight of each edge is drawn independently from an a-priori known probability distribution. Under edge arrival, the weight of each edge is revealed upon arrival, and the algorithm decides whether to include it in the matching or not. Under vertex arrival, the weights of all edges from the newly arriving vertex to all previously arrived vertices are revealed, and the algorithm decides which of these edges, if any, to include in the matching. To study these settings, we introduce a novel unified framework of batched prophet inequalities that captures online settings where elements arrive in batches; in particular it captures matching under the two aforementioned arrival models. Our algorithms rely on the construction of suitable online contention resolution schemes (OCRS). We first extend the framework of OCRS to batched-OCRS, we then establish a reduction from batched prophet inequality to batched OCRS, and finally we construct batched OCRSs with selectable ratios of 0.337 and 0.5 for edge and vertex arrival models, respectively. Both results improve the state of the art for the corresponding settings. For vertex arrival, our result is tight. Interestingly, pricing-based prophet inequalities with comparable competitive ratios are unknown.},
+booktitle = {Proceedings of the 21st ACM Conference on Economics and Computation},
+pages = {769–787},
+numpages = {19},
+keywords = {online contention resolution schemes, online matching, online stochastic matching, prophet inequality},
+location = {Virtual Event, Hungary},
+series = {EC '20},
+abbr = {EC}
+}
+
+@inproceedings{PI_Bipartite19,
+author = {Gravin, Nikolai and Wang, Hongao},
+title = {Prophet Inequality for Bipartite Matching: Merits of Being Simple and Non Adaptive},
+year = {2019},
+isbn = {9781450367929},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3328526.3329604},
+doi = {10.1145/3328526.3329604},
+abstract = {We consider Bayesian online selection problem of a matching in bipartite graphs, i.e., online weighted matching problem with edge arrivals where online algorithm knows distributions of weights, that corresponds to the intersection of two matroids in Kleinberg and Weinberg [35] model. We consider a simple class of non adaptive vertex-additive policies that assign static prices to all vertices in the graph and accept each edge only if its weight exceeds the sum of the prices of the edge's endpoints. We show existence of a vertex-additive policy with the expected payoff of at least one third of the prophet's payoff and present gradient decent type algorithm that quickly converges to the desired vector of vertex prices. This improves the adaptive online policy of Kleinberg and Weinberg for the intersection of two matroids in two ways: our policy is non adaptive and has better approximation guarantee of $3$ instead of previous guarantees $5.82$ of Kleinberg and Weinberg and $2\cdot e=5.43$ of Feldman et al. [23] against the prophet. We give a complementary lower bound of $2.25$ for any online algorithm in the bipartite matching setting.},
+booktitle = {Proceedings of the 2019 ACM Conference on Economics and Computation},
+pages = {93–109},
+numpages = {17},
+keywords = {prophet inequality, online matching, non-adaptive thresholds, edge arrivals},
+location = {Phoenix, AZ, USA},
+series = {EC '19},
+abbr = {EC}
+}
 
 
+@inproceedings{Budget_Feasible_Additive19,
+author = {Gravin, Nick and Jin, Yaonan and Lu, Pinyan and Zhang, Chenhao},
+title = {Optimal Budget-Feasible Mechanisms for Additive Valuations},
+year = {2019},
+isbn = {9781450367929},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3328526.3329586},
+doi = {10.1145/3328526.3329586},
+abstract = {In this paper, we obtain the tight approximation guarantees for budget-feasible mechanisms with an additive buyer. We propose a new simple randomized mechanism with an approximation ratio of $2$, improving the previous best known result of $3$. Our bound is tight with respect to either the optimal offline benchmark or its fractional relaxation. We also present a simple deterministic mechanism with the tight approximation guarantee of $3$ against the fractional optimum, improving the best known result of $(2+√2)$ against the weaker integral benchmark.},
+booktitle = {Proceedings of the 2019 ACM Conference on Economics and Computation},
+pages = {887–900},
+numpages = {14},
+keywords = {approximation, budget-feasible auction, mechanism design},
+location = {Phoenix, AZ, USA},
+series = {EC '19},
+abbr = {EC}
+}
+
+@inproceedings{EF_Donating19,
+author = {Caragiannis, Ioannis and Gravin, Nick and Huang, Xin},
+title = {Envy-Freeness Up to Any Item with High Nash Welfare: The Virtue of Donating Items},
+year = {2019},
+isbn = {9781450367929},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3328526.3329574},
+doi = {10.1145/3328526.3329574},
+abstract = {Several fairness concepts have been proposed recently in attempts to approximate envy-freeness in settings with indivisible goods. Among them, the concept of envy-freeness up to any item (EFX) is arguably the closest to envy-freeness. Unfortunately, EFX allocations are not known to exist except in a few special cases. We make significant progress in this direction. We show that for every instance with additive valuations, there is an EFX allocation of a subset of items with a Nash welfare that is at least half of the maximum possible Nash welfare for the original set of items. That is, after donating some items to a charity, one can distribute the remaining items in a fair way with high efficiency. This bound is proved to be best possible. Our proof is constructive and highlights the importance of maximum Nash welfare allocation. Starting with such an allocation, our algorithm decides which items to donate and redistributes the initial bundles to the agents, eventually obtaining an allocation with the claimed efficiency guarantee. The application of our algorithm to large markets, where the valuations of an agent for every item is relatively small, yields EFX with almost optimal Nash welfare. We also show that our algorithm can be modified to compute, in polynomial-time, EFX allocations that approximate optimal Nash welfare within a factor of at most 2ρ, using a ρ-approximate allocation on input instead of the maximum Nash welfare one.},
+booktitle = {Proceedings of the 2019 ACM Conference on Economics and Computation},
+pages = {527–545},
+numpages = {19},
+keywords = {nash wefalre, indivisible items, fairness in allocation problems, envy-freeness},
+location = {Phoenix, AZ, USA},
+series = {EC '19},
+abbr = {EC}
+}
+
+
+@inproceedings{Correlation_Robust_One_Item19,
+author = {Bei, Xiaohui and Gravin, Nick and Lu, Pinyan and Tang, Zhihao Gavin},
+title = {Correlation-robust analysis of single item auction},
+year = {2019},
+publisher = {Society for Industrial and Applied Mathematics},
+address = {USA},
+abstract = {We investigate the problem of revenue maximization in single-item auction within the new correlation-robust framework proposed by Carroll [2017] and further developed by Gravin and Lu [2018]. In this framework the auctioneer is assumed to have only partial information about marginal distributions, but does not know the dependency structure of the joint distribution. The auctioneer's revenue is evaluated in the worst-case over the uncertainty of possible joint distribution.For the problem of optimal auction design in the correlation robust-framework we observe that in most cases the optimal auction does not admit a simple form like the celebrated Myerson's auction for independent valuations. We analyze and compare performances of several DSIC mechanisms used in practice. Our main set of results concern the sequential posted-price mechanism (SPM). We show that SPM achieves a constant (4.78) approximation to the optimal correlation-robust mechanism. We also show that in the symmetric (anonymous) case when all bidders have the same marginal distribution, (i) SPM has almost matching worst-correlation revenue as any second price auction with common reserve price, and (ii) when the number of bidders is large, SPM converges to optimum. In addition, we extend some results on approximation and computational tractability for lookahead auctions to the correlation-robust framework.},
+booktitle = {Proceedings of the Thirtieth Annual ACM-SIAM Symposium on Discrete Algorithms},
+pages = {193–208},
+numpages = {16},
+location = {San Diego, California},
+series = {SODA '19},
+abbr = {SODA}
+}
+
+@inproceedings{Budget_AdditiveBuyer18,
+author = {Cheng, Yu and Gravin, Nick and Munagala, Kamesh and Wang, Kangning},
+title = {A Simple Mechanism for a Budget-Constrained Buyer},
+year = {2018},
+isbn = {978-3-030-04611-8},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-3-030-04612-5_7},
+doi = {10.1007/978-3-030-04612-5_7},
+abstract = {We study a classic Bayesian mechanism design setting of monopoly problem for an additive buyer in the presence of budgets. In this setting a monopolist seller with m heterogeneous items faces a single buyer and seeks to maximize her revenue. The buyer has a budget and additive valuations drawn independently for each item from (non-identical) distributions. We show that when the buyer’s budget is publicly known, the better of selling each item separately and selling the grand bundle extracts a constant fraction of the optimal revenue. When the budget is private, we consider a standard Bayesian setting where buyer’s budget b is drawn from a known distribution B. We show that if b is independent of the valuations and distribution B satisfies monotone hazard rate condition, then selling items separately or in a grand bundle is still approximately optimal. We give a complementary example showing that no constant approximation simple mechanism is possible if budget b can be interdependent with valuations.},
+booktitle = {Web and Internet Economics: 14th International Conference, WINE 2018, Oxford, UK, December 15–17, 2018, Proceedings},
+pages = {96–110},
+numpages = {15},
+keywords = {Simple Mechanism, Optimal Revenue, Monotone Hazard Rate (MHR), Single Buyer, Privacy Budget},
+location = {Oxford, United Kingdom},
+abbr = {WINE}
+}
+
+@inproceedings{Liquid_POA17,
+author = {Azar, Yossi and Feldman, Michal and Gravin, Nick and Roytman, Alan},
+title = {Liquid Price of Anarchy},
+year = {2017},
+isbn = {978-3-319-66699-0},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-3-319-66700-3_1},
+doi = {10.1007/978-3-319-66700-3_1},
+abstract = {Incorporating budget constraints into the analysis of auctions has become increasingly important, as they model practical settings more accurately. The social welfare function, which is the standard measure of efficiency in auctions, is inadequate for settings with budgets, since there may be a large disconnect between the value a bidder derives from obtaining an item and what can be liquidated from her. The Liquid Welfare objective function has been suggested as a natural alternative for settings with budgets. Simple auctions, like simultaneous item auctions, are evaluated by their performance at equilibrium using the Price of Anarchy (PoA) measure – the ratio of the objective function value of the optimal outcome to the worst equilibrium. Accordingly, we evaluate the performance of simultaneous item auctions in budgeted settings by the Liquid Price of Anarchy (LPoA) measure – the ratio of the optimal Liquid Welfare to the Liquid Welfare obtained in the worst equilibrium.For pure Nash equilibria of simultaneous first price auctions, we obtain a bound of 2 on the LPoA for additive buyers. Our results easily extend to the larger class of fractionally-subadditive valuations. Next we show that the LPoA of mixed Nash equilibria for first price auctions with additive bidders is bounded by a constant. Our proofs are robust, and can be extended to achieve similar bounds for Bayesian Nash equilibria. To derive our results, we develop a new technique in which some bidders deviate (surprisingly) toward a non-optimal solution. In particular, this technique goes beyond the smoothness-based approach.},
+booktitle = {Algorithmic Game Theory: 10th International Symposium, SAGT 2017, L’Aquila, Italy, September 12–14, 2017, Proceedings},
+pages = {3–15},
+numpages = {13},
+keywords = {Liquid Price, Mixed Nash Equilibrium, Price Auction, Auction Items, Simple Auction},
+location = {L'Aquila, Italy},
+abbr = {SAGT}
+}
+
+@article{ApproxNE_CSG17,
+author = {Caragiannis, Ioannis and Fanelli, Angelo and Gravin, Nick},
+title = {Short Sequences of Improvement Moves Lead to Approximate Equilibria in Constraint Satisfaction Games},
+year = {2017},
+issue_date = {April 2017},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+volume = {77},
+number = {4},
+issn = {0178-4617},
+url = {https://doi.org/10.1007/s00453-016-0143-x},
+doi = {10.1007/s00453-016-0143-x},
+abstract = {We present an algorithm that computes approximate pure Nash equilibria in a broad class of constraint satisfaction games that generalize the well-known cut and party affiliation games. Our results improve previous ones by Bhalgat et al. (EC 10) in terms of the obtained approximation guarantee. More importantly, our algorithm identifies a polynomially-long sequence of improvement moves from any initial state to an approximate equilibrium in these games. The existence of such short sequences is an interesting structural property which, to the best of our knowledge, was not known before. Our techniques adapt and extend our previous work for congestion games (FOCS 11) but the current analysis is considerably simpler.},
+journal = {Algorithmica},
+month = {apr},
+pages = {1143–1158},
+numpages = {16},
+keywords = {Algorithmic game theory, Complexity of equilibria, Constraint satisfaction, Potential games, Pure Nash equilibrium},
+abbr = {Algorithmica}
+}
+
+@article{Budget_Feasible_Bayesian17,
+author = {Bei, Xiaohui and Chen, Ning and Gravin, Nick and Lu, Pinyan},
+title = {Worst-Case Mechanism Design via Bayesian Analysis},
+year = {2017},
+issue_date = {January 2017},
+publisher = {Society for Industrial and Applied Mathematics},
+address = {USA},
+volume = {46},
+number = {4},
+issn = {0097-5397},
+url = {https://doi.org/10.1137/16M1067275},
+doi = {10.1137/16M1067275},
+abstract = {Budget feasible mechanism design is the study of procurement combinatorial auctions
+in which the sellers have private costs to produce items, and the buyer
+(auctioneer) aims to maximize her valuation function on a subset of purchased items
+under the budget constraint on the total payment. One of the most important
+questions in the field is “which valuation domains admit truthful budget
+feasible mechanisms with `small' approximations to the social optimum?” Singer [Proceedings of the 51st FOCS, IEEE Press, Piscataway, NJ, 2010, pp. 765--774] showed that submodular functions have a constant
+approximation mechanism. Dobzinski, Papadimitriou, and Singer [Proceedings of the 12th ACM Conference on Electronic Commerce, ACM, New York, 2011, pp. 273--282]
+gave an $O(log^2n)$ approximation mechanism for subadditive functions and
+remarked that “A fundamental question is whether, regardless
+of computational constraints, a constant-factor budget feasible
+mechanism exists for subadditive functions.” In this paper, we give an affirmative answer to this question.
+To this end we relax the prior-free mechanism design framework to the Bayesian mechanism design framework (these are two standard approaches from computer science and economics, respectively). Then we convert our results in the Bayesian setting back to the prior-free framework by employing
+Yao's minimax principle. Along the way, we obtain the following results:
+(i) a polynomial time constant approximation for XOS valuations (a.k.a. fractionally subadditive valuations, a superset of submodular functions),
+(ii) a polynomial time $O(log n / log log n)$-approximation for general subadditive valuations,
+(iii) a constant approximation for general subadditive functions in the Bayesian framework---we allow correlation in the distribution of sellers' costs and provide a universally truthful mechanism,
+(iv) the existence of a prior-free constant approximation mechanism via Yao's minimax principle.},
+journal = {SIAM J. Comput.},
+month = {jan},
+pages = {1428–1448},
+numpages = {21},
+keywords = {mechanism design, budget feasible, prior-free, Bayesian, 68W25, 91A80},
+abbr = {SICOMP}
+}
+
+@inproceedings{Procrastination16,
+author = {Gravin, Nick and Immorlica, Nicole and Lucier, Brendan and Pountourakis, Emmanouil},
+title = {Procrastination with Variable Present Bias},
+year = {2016},
+isbn = {9781450339360},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2940716.2940774},
+doi = {10.1145/2940716.2940774},
+abstract = {Individuals working towards a goal often exhibit time inconsistent behavior, making plans and then failing to follow through. One well-known model of such behavioral anomalies is present-bias discounting: individuals over-weight present costs by a bias factor. This model explains many time-inconsistent behaviors, but can make stark predictions in many settings: individuals either follow the most efficient plan for reaching their goal or procrastinate indefinitely. We propose a modification in which the present-bias parameter can vary over time, drawn independently each step from a fixed distribution. Following Kleinberg and Oren (2014), we use a weighted {it task graph} to model task planning, and measure the cost of procrastination as the relative expected cost of the chosen path versus the optimal path. We use a novel connection to optimal pricing theory to describe the structure of the worst-case task graph for any present-bias distribution. We then leverage this structure to derive conditions on the bias distribution under which the worst-case ratio is exponential (in time) or constant. We also examine conditions on the task graph that lead to improved procrastination ratios: graphs with a uniformly bounded distance to the goal, and graphs in which the distance to the goal monotonically decreases on any path.},
+booktitle = {Proceedings of the 2016 ACM Conference on Economics and Computation},
+pages = {361},
+numpages = {1},
+keywords = {behavioral economics, graph theory, procrastination},
+location = {Maastricht, The Netherlands},
+series = {EC '16},
+abbr = {EC}
+}
+
+@inproceedings{Optimal_MWA16,
+author = {Gravin, Nick and Peres, Yuval and Sivan, Balasubramanian},
+title = {Towards optimal algorithms for prediction with expert advice},
+year = {2016},
+isbn = {9781611974331},
+publisher = {Society for Industrial and Applied Mathematics},
+address = {USA},
+abstract = {We study the classical problem of prediction with expert advice in the adversarial setting with a geometric stopping time. In 1965, Cover gave the optimal algorithm for the case of 2 experts. In this paper, we design the optimal algorithm, adversary and regret for the case of 3 experts. Further, we show that the optimal algorithm for 2 and 3 experts is a probability matching algorithm (analogous to Thompson sampling) against a particular randomized adversary. Remarkably, our proof shows that the probability matching algorithm is not only optimal against this particular randomized adversary, but also minimax optimal.Our analysis develops upper and lower bounds simultaneously, analogous to the primal-dual method. Our analysis of the optimal adversary goes through delicate asymptotics of the random walk of a particle between multiple walls. We use the connection we develop to random walks to derive an improved algorithm and regret bound for the case of 4 experts, and, provide a general framework for designing the optimal algorithm and adversary for an arbitrary number of experts.},
+booktitle = {Proceedings of the Twenty-Seventh Annual ACM-SIAM Symposium on Discrete Algorithms},
+pages = {528–547},
+numpages = {20},
+location = {Arlington, Virginia},
+series = {SODA '16},
+abbr = {SODA}
+}
+
+@inproceedings{Competitive_BenchmarkDecomposition15,
+author = {Chen, Ning and Gravin, Nikolai and Lu, Pinyan},
+title = {Competitive Analysis via Benchmark Decomposition},
+year = {2015},
+isbn = {9781450334105},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2764468.2764491},
+doi = {10.1145/2764468.2764491},
+abstract = {We propose a uniform approach for the design and analysis of prior-free competitive auctions and online auctions. Our philosophy is to view the benchmark function as a variable parameter of the model and study a broad class of functions instead of a individual target benchmark. We consider a multitude of well-studied auction settings, and improve upon a few previous results.
+First, for multi-unit auctions, given a $\beta$-competitive unlimited supply auction, the best previously known multi-unit auction is $2\beta$-competitive.
+We design a $(1+\beta)$-competitive auction reducing the ratio from $4.84$ to $3.24$. These results carry over to matroid and position auctions.
+Second, for general downward-closed environments, we design a $6.5$-competitive auction improving upon the ratio of $7.5$. Our auction is noticeably simpler than the previous best one.
+Third, for unlimited supply online auctions, our analysis yields an auction with a competitive ratio of $4.12$, which significantly
+narrows the margin of $[4, 4.84]$ previously known for this problem.
+A particularly important tool in our analysis is a simple decomposition lemma, which allows us to bound the competitive ratio against a sum of
+benchmark functions. We use this lemma in a ``divide and conquer'' fashion by dividing the target benchmark into the sum of simpler functions.
+},
+booktitle = {Proceedings of the Sixteenth ACM Conference on Economics and Computation},
+pages = {363–376},
+numpages = {14},
+keywords = {benchmark decomposition, competitive analysis, digital good auctions, online auctions, position auction},
+location = {Portland, Oregon, USA},
+series = {EC '15},
+abbr = {EC}
+}
+
+@article{ApproxNE_WCG15,
+author = {Caragiannis, Ioannis and Fanelli, Angelo and Gravin, Nick and Skopalik, Alexander},
+title = {Approximate Pure Nash Equilibria in Weighted Congestion Games: Existence, Efficient Computation, and Structure},
+year = {2015},
+issue_date = {March 2015},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {3},
+number = {1},
+issn = {2167-8375},
+url = {https://doi.org/10.1145/2614687},
+doi = {10.1145/2614687},
+abstract = {We consider structural and algorithmic questions related to the Nash dynamics of weighted congestion games.
+            In weighted congestion games with linear latency functions, the existence of pure Nash equilibria is
+            guaranteed by potential function arguments. Unfortunately, this proof of existence is inefficient and
+            computing pure Nash equilibria is such games is a PLS-hard problem even when all players have unit
+            weights. The situation gets worse when superlinear (e.g., quadratic) latency functions come into play;
+            in this case, the Nash dynamics of the game may contain cycles and pure Nash equilibria may not even exist.
+            Given these obstacles, we consider approximate pure Nash equilibria as alternative solution concepts. Do
+            such equilibria exist? And if so, can we compute them efficiently? We provide positive answers to both
+            questions for weighted congestion games with polynomial latency functions by exploiting an ``approximation''
+            of such games by a new class of potential games that we call $\Psi$-games. This allows us to show that these
+            games have $d!$-approximate pure Nash equilibria, where $d$ is the maximum degree of the latency functions.
+            Our main technical contribution is an efficient algorithm for computing $O(1)$-approximate pure Nash equilibria
+            when $d$ is a constant. For games with linear latency functions, the approximation guarantee is
+            $(3+√5)/2  + O(\gamma)$ for arbitrarily small $\gamma>0$; for latency functions with maximum degree
+            $d\geq 2$, it is $d^(2d+o(d))$. The running time is polynomial in the number of bits in the representation of
+            the game and $1/\gamma$. As a byproduct of our techniques, we also show the following interesting structural
+            statement for weighted congestion games with polynomial latency functions of maximum degree $d\geq 2$:
+            polynomially-long sequences of best-response moves from any initial state to a $d^{O(d^2)}$-approximate pure
+            Nash equilibrium exist and can be efficiently identified in such games as long as $d$ is constant. To the best
+            of our knowledge, these are the first positive algorithmic results for approximate pure Nash equilibria in weighted
+            congestion games. Our techniques significantly extend our recent work on unweighted congestion games through the
+            use of $\Psi$-games. The concept of approximating non-potential games by potential ones seems to be novel and might
+            have further applications.},
+journal = {ACM Trans. Econ. Comput.},
+month = {mar},
+articleno = {2},
+numpages = {32},
+keywords = {Nash dynamics, Pure Nash equilibria, potential games},
+abbr = {TEAC}
+}
+
+@inproceedings{CA_PostedPrices15,
+author = {Feldman, Michal and Gravin, Nick and Lucier, Brendan},
+title = {Combinatorial auctions via posted prices},
+year = {2015},
+publisher = {Society for Industrial and Applied Mathematics},
+address = {USA},
+abstract = {We study anonymous posted price mechanisms for combinatorial auctions in a Bayesian framework. In a posted price mechanism, item prices are posted, then the consumers approach the seller sequentially in an arbitrary order, each purchasing her favorite bundle from among the unsold items at the posted prices. These mechanisms are simple, transparent and trivially dominant strategy incentive compatible (DSIC).We show that when agent preferences are fractionally subadditive (which includes all submodular functions), there always exist prices that, in expectation, obtain at least half of the optimal welfare. Our result is constructive: given black-box access to a combinatorial auction algorithm A, sample access to the prior distribution, and appropriate query access to the sampled valuations, one can compute, in polytime, prices that guarantee at least half of the expected welfare of A. As a corollary, we obtain the first polytime (in n and m) constant-factor DSIC mechanism for Bayesian submodular combinatorial auctions, given access to demand query oracles. Our results also extend to valuations with complements, where the approximation factor degrades linearly with the level of complementarity.},
+booktitle = {Proceedings of the Twenty-Sixth Annual ACM-SIAM Symposium on Discrete Algorithms},
+pages = {123–135},
+numpages = {13},
+location = {San Diego, California},
+series = {SODA '15},
+abbr = {SODA}
+}
+
+@article{Truthful_GA_via_StableMatching14,
+author = {Chen, Ning and Gravin, Nick and Lu, Pinyan},
+title = {Truthful Generalized Assignments via Stable Matching},
+year = {2014},
+issue_date = {August 2014},
+publisher = {INFORMS},
+address = {Linthicum, MD, USA},
+volume = {39},
+number = {3},
+issn = {0364-765X},
+url = {https://doi.org/10.1287/moor.2013.0625},
+doi = {10.1287/moor.2013.0625},
+abstract = {In the generalized assignment problem (gap), a set of jobs seek to be assigned to a set of machines. For every job-machine pair, there are a specific value and an accommodated capacity for the assignment. The objective is to find an assignment that maximizes the total sum of values given that the capacity constraint of every machine is satisfied.The gap is a classic optimization problem and has been studied extensively from the algorithmic perspective. Dughmi and Ghosh [Dughmi S, Ghosh A (2010) Truthful assignment without money. ACM Conf. Electronic Commerce (ACM, New York), 325–334.] proposed the game theoretical framework in which every job is owned by a selfish agent who aims to maximize the value of his own assignment. They gave a logarithmic approximation truthful in expectation mechanism and left open the problem whether there exists a truthful mechanism with a constant approximation factor. In this paper, we give an affirmative answer to this question and provide a constant approximation mechanism that enjoys a stronger incentive property of universal truthfulness than that of truthfulness in expectation.Our mechanism is inspired by stable matching, which is a fundamental solution concept in the context of matching marketplaces. The mechanism uses a stable matching algorithm as a critical component and adopts other approaches like random sampling.},
+journal = {Math. Oper. Res.},
+month = {aug},
+pages = {722–736},
+numpages = {15},
+keywords = {generalized assignment, mechanism design, stable matching},
+abbr = {MOR}
+}
+
+@inproceedings{DigitalGoods14,
+author = {Chen, Ning and Gravin, Nick and Lu, Pinyan},
+title = {Optimal competitive auctions},
+year = {2014},
+isbn = {9781450327107},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2591796.2591855},
+doi = {10.1145/2591796.2591855},
+abstract = {We study the design of truthful auctions for selling identical items in unlimited supply (e.g., digital goods)
+            to n unit demand buyers. This classic problem stands out from profit-maximizing auction design literature as
+            it requires no probabilistic assumptions on buyers' valuations and employs the framework of competitive analysis.
+            Our objective is to optimize the worst-case performance of an auction, measured by the ratio between a given
+            benchmark and revenue generated by the auction. We establish a sufficient and necessary condition that characterizes
+            competitive ratios for all monotone benchmarks. The characterization identifies the worst-case distribution of
+            instances and reveals intrinsic relations between competitive ratios and benchmarks in the competitive analysis.
+            With the characterization at hand, we show optimal competitive auctions for two natural benchmarks. The most
+            well-studied benchmark ${F^(2)}$ measures the envy-free optimal revenue where at least two buyers win.
+            Goldberg et al. [13] showed a sequence of lower bounds on the competitive ratio for each number of buyers n.
+            They conjectured that all these bounds are tight. We show that optimal competitive auctions match these bounds.
+            Thus, we confirm the conjecture and settle a central open problem in the design of digital goods auctions. As one
+            more application we examine another economically meaningful benchmark, which measures the optimal revenue across
+            all limited-supply Vickrey auctions. We identify the optimal competitive ratios to be $(n/(n-1))^(n-1)-1$
+            for each number of buyers n, that is $e-1$ as $n$ approaches infinity.},
+booktitle = {Proceedings of the Forty-Sixth Annual ACM Symposium on Theory of Computing},
+pages = {253–262},
+numpages = {10},
+keywords = {mechanism design, digital goods, competitive analysis, auction},
+location = {New York, New York},
+series = {STOC '14},
+abbr = {STOC}
+}
+
+@article{Tilings_3D13,
+author = {Gravin, Nick and Kolountzakis, Mihail N. and Robins, Sinai and Shiryaev, Dmitry},
+title = {Structure Results for Multiple Tilings in 3D},
+year = {2013},
+issue_date = {December 2013},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+volume = {50},
+number = {4},
+issn = {0179-5376},
+url = {https://doi.org/10.1007/s00454-013-9548-3},
+doi = {10.1007/s00454-013-9548-3},
+abstract = {We study multiple tilings of 3-dimensional Euclidean space by a convex body.   In a multiple tiling, a
+            convex body $P$ is translated with a discrete multiset $\Lambda$ in such a way that each point of
+            $R^d$ gets covered exactly $k$ times, except perhaps the translated copies of the boundary of $P$. It is
+            known that all possible multiple tilers in $R^3$ are zonotopes. In $R^2$ it was known by the work of
+            M. Kolountzakis (Discrete Comput Geom 23(4):537---553, 2000)  that, unless $P$ is a parallelogram,
+            the multiset of translation vectors $\Lambda$ must be a finite union of translated lattices (also known
+            as quasi-periodic sets).   In that work the author asked whether the same quasi-periodic structure on the
+            translation vectors would be true in $R^3$. Here we prove that this conclusion is indeed true for
+            $R^3$. Namely, we show that if $P$ is a convex multiple tiler in $R^3$, with a discrete multiset
+            ${\Lambda}$ of translation vectors, then ${\Lambda}$ has to be a finite union of translated lattices, unless
+            $P$ belongs to a special class of zonotopes. This exceptional class consists of two-flat zonotopes $P$,
+            defined by the Minkowski sum of two $2$-dimensional symmetric polygons in $R^3$, one of which may degenerate
+            into a single line segment.  It turns out that rational two-flat zonotopes admit a multiple tiling with an
+            aperiodic (non-quasi-periodic) set of translation vectors $\Lambda$.  We note that it may be quite difficult
+            to offer a visualization of these $3$-dimensional non-quasi-periodic tilings, and that we discovered them by
+            using Fourier methods.},
+journal = {Discrete Comput. Geom.},
+month = {dec},
+pages = {1033–1050},
+numpages = {18},
+keywords = {Fourier transform, Lattices, Multiple tilings, Quasi-periodicity, Tilings, Zonotope},
+abbr = {DCG}
+}
+
+@inproceedings{Externalities_DigitalGoods13,
+author = {Gravin, Nick and Lu, Pinyan},
+title = {Competitive auctions for markets with positive externalities},
+year = {2013},
+isbn = {9783642392115},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-3-642-39212-2_50},
+doi = {10.1007/978-3-642-39212-2_50},
+abstract = {In digital goods auctions, the auctioneer sells an item in unlimited supply to a set of potential buyers. The objective is to design a truthful auction that maximizes the auctioneer's total profit. Motivated by the observation that the buyers' valuation of the good might be interconnected through a social network, we study digital goods auctions with positive externalities among buyers. This defines a multi-parameter auction design problem where the private valuation of every buyer is a function of the set of other winning buyers. The main contribution of this paper is a truthful competitive mechanism for subadditive valuations. Our competitive result is with respect to a new solution benchmark $F^(3)$. On the other hand, we show a surprising impossibility result if comparing to the stronger benchmark $F^(2)$, where the latter has been used quite successfully in digital goods auctions without externalities [16].},
+booktitle = {Proceedings of the 40th International Conference on Automata, Languages, and Programming - Volume Part II},
+pages = {569–580},
+numpages = {12},
+location = {Riga, Latvia},
+series = {ICALP'13},
+abbr = {ICALP}
+}
+
+@inproceedings{Simultaneous_Subadditive13,
+author = {Feldman, Michal and Fu, Hu and Gravin, Nick and Lucier, Brendan},
+title = {Simultaneous auctions are (almost) efficient},
+year = {2013},
+isbn = {9781450320290},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2488608.2488634},
+doi = {10.1145/2488608.2488634},
+abstract = {Simultaneous item auctions are simple and practical procedures for allocating items to bidders with potentially complex preferences. In a simultaneous auction, every bidder submits independent bids on all items simultaneously. The allocation and prices are then resolved for each item separately, based solely on the bids submitted on that item. We study the efficiency of Bayes-Nash equilibrium (BNE) outcomes of simultaneous first- and second-price auctions when bidders have complement-free (a.k.a. subadditive) valuations. While it is known that the social welfare of every pure Nash equilibrium (NE) constitutes a constant fraction of the optimal social welfare, a pure NE rarely exists, and moreover, the full information assumption is often unrealistic. Therefore, quantifying the welfare loss in Bayes-Nash equilibria is of particular interest. Previous work established a logarithmic bound on the ratio between the social welfare of a BNE and the expected optimal social welfare in both first-price auctions (Hassidim et al., 2011) and second-price auctions (Bhawalkar and Roughgarden, 2011), leaving a large gap between a constant and a logarithmic ratio. We introduce a new proof technique and use it to resolve both of these gaps in a unified way. Specifically, we show that the expected social welfare of any BNE is at least $1/2$ of the optimal social welfare in the case of first-price auctions, and at least $1/4$ in the case of second-price auctions.},
+booktitle = {Proceedings of the Forty-Fifth Annual ACM Symposium on Theory of Computing},
+pages = {201–210},
+numpages = {10},
+keywords = {bayes-nash equilibrium, first-price auction, price of anarchy, second-price auction, simultaneous auction},
+location = {Palo Alto, California, USA},
+series = {STOC '13},
+abbr = {STOC}
+}
+
+@inproceedings{CWE13,
+author = {Feldman, Michal and Gravin, Nick and Lucier, Brendan},
+title = {Combinatorial walrasian equilibrium},
+year = {2013},
+isbn = {9781450320290},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2488608.2488617},
+doi = {10.1145/2488608.2488617},
+abstract = {We study a combinatorial market design problem, where a collection of indivisible objects is to be priced and sold to potential buyers subject to equilibrium constraints. The classic solution concept for such problems is Walrasian Equilibrium (WE), which provides a simple and transparent pricing structure that achieves optimal social welfare. The main weakness of the WE notion is that it exists only in very restrictive cases. To overcome this limitation, we introduce the notion of a Combinatorial Walrasian equilibium (CWE), a natural relaxation of WE. The difference between a CWE and a (non-combinatorial) WE is that the seller can package the items into indivisible bundles prior to sale, and the market does not necessarily clear. We show that every valuation profile admits a CWE that obtains at least half of the optimal (unconstrained) social welfare. Moreover, we devise a poly-time algorithm that, given an arbitrary allocation X, computes a CWE that achieves at least half of the welfare of X. Thus, the economic problem of finding a CWE with high social welfare reduces to the algorithmic problem of social-welfare approximation. In addition, we show that every valuation profile admits a CWE that extracts a logarithmic fraction of the optimal welfare as revenue. Finally, these results are complemented by strong lower bounds when the seller is restricted to using item prices only, which motivates the use of bundles. The strength of our results derives partly from their generality --- our results hold for arbitrary valuations that may exhibit complex combinations of substitutes and complements.},
+booktitle = {Proceedings of the Forty-Fifth Annual ACM Symposium on Theory of Computing},
+pages = {61–70},
+numpages = {10},
+keywords = {walrasian equilibrium, envy-free, combinatorial auctions},
+location = {Palo Alto, California, USA},
+series = {STOC '13},
+abbr = {STOC}
+}
+
+@article{Inverse_Polytope12,
+author = {Gravin, Nick and Lasserre, Jean and Pasechnik, Dmitrii V. and Robins, Sinai},
+title = {The Inverse Moment Problem for Convex Polytopes},
+year = {2012},
+issue_date = {October 2012},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+volume = {48},
+number = {3},
+issn = {0179-5376},
+abstract = {The goal of this paper is to present a general and novel approach for the reconstruction of any convex d-dimensional polytope P, from knowledge of its moments. In particular, we show that the vertices of an N-vertex polytope in $\mathbb{R}^d$ can be reconstructed from the knowledge of $O(D\cdot N)$ axial moments (w.r.t. to an unknown polynomial measure of degree $D$) in $d+1$ distinct generic directions. Our approach is based on the collection of moment formulas due to Brion, Lawrence, Khovanskii-Pukhikov, and Barvinok that arise in the discrete geometry of polytopes, and what variously known as Prony's method, or Vandermonde factorization of finite rank Hankel matrices.},
+journal = {Discrete Comput. Geom.},
+month = {oct},
+pages = {596–621},
+numpages = {26},
+keywords = {Polytopes, Inverse moment problem, Brion---Lawrence---Khovanskii---Pukhlikov---Barvinok formula, Axial moments},
+abbr = {DCG}
+}
+
+@inproceedings{ApproxNE_WCG12,
+author = {Caragiannis, Ioannis and Fanelli, Angelo and Gravin, Nick and Skopalik, Alexander},
+title = {Approximate pure nash equilibria in weighted congestion games: existence, efficient computation, and structure},
+year = {2012},
+isbn = {9781450314152},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2229012.2229036},
+doi = {10.1145/2229012.2229036},
+abstract = {We consider structural and algorithmic questions related to the Nash dynamics of weighted congestion games.
+            In weighted congestion games with linear latency functions, the existence of pure Nash equilibria is guaranteed
+            by potential function arguments. Unfortunately, this proof of existence is inefficient and computing pure Nash
+            equilibria is such games is a PLS-hard problem even when all players have unit weights. The situation gets
+            worse when superlinear (e.g., quadratic) latency functions come into play; in this case, the Nash dynamics of
+            the game may contain cycles and pure Nash equilibria may not even exist. Given these obstacles, we consider
+            approximate pure Nash equilibria as alternative solution concepts. Do such equilibria exist? And if so, can
+            we compute them efficiently? We provide positive answers to both questions for weighted congestion games with
+            polynomial latency functions by exploiting an ``approximation'' of such games by a new class of potential games
+            that we call $\Psi$-games. This allows us to show that these games have $d!$-approximate pure Nash equilibria,
+            where $d$ is the maximum degree of the latency functions. Our main technical contribution is an efficient
+            algorithm for computing $O(1)$-approximate pure Nash equilibria when $d$ is a constant. For games with linear
+            latency functions, the approximation guarantee is $(3+√5)/2 +O(\gamma)$ for arbitrarily small $\gamma>0$;
+            for latency functions with maximum degree $d\geq 2$, it is $d^(2d+o(d))$. The running time is polynomial in the
+            number of bits in the representation of the game and $1/\gamma$. As a byproduct of our techniques, we also show
+            the following interesting structural statement for weighted congestion games with polynomial latency functions
+            of maximum degree $d\geq 2$: polynomially-long sequences of best-response moves from any initial state to a
+            $d^(O(d^2))$-approximate pure Nash equilibrium exist and can be efficiently identified in such games as long as
+            $d$ is constant. To the best of our knowledge, these are the first positive algorithmic results for approximate
+            pure Nash equilibria in weighted congestion games. Our techniques significantly extend our recent work on unweighted
+            congestion games through the use of $\Psi$-games. The concept of approximating non-potential games by potential
+            ones seems to be novel and might have further applications.},
+booktitle = {Proceedings of the 13th ACM Conference on Electronic Commerce},
+pages = {284–301},
+numpages = {18},
+keywords = {pure nash equilibria, potential games},
+location = {Valencia, Spain},
+series = {EC '12},
+abbr = {EC}
+}
+
+@article{ApproxNE_Congestion12,
+author = {Caragiannis, Ioannis and Fanelli, Angelo and Gravin, Nick and Skopalik, Alexander},
+title = {Computing approximate pure Nash equilibria in congestion games},
+year = {2012},
+issue_date = {June 2012},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {11},
+number = {1},
+url = {https://doi.org/10.1145/2325713.2325718},
+doi = {10.1145/2325713.2325718},
+abstract = {Among other solution concepts, the notion of the pure Nash equilibrium plays a central role in Game Theory. Pure Nash equilibria in a game characterize situations with non-cooperative deterministic players in which no player has any incentive to unilaterally deviate from the current situation in order to achieve a higher payoff. Unfortunately, it is well known that there are games that do not have pure Nash equilibria. Furhermore, even in games where the existence of equilibria is guaranteed, their computation can be a computationally hard task. Such negative results significantly question the importance of pure Nash equilibria as solution concepts that characterize the behavior of rational players. Approximate pure Nash equilibria, which characterize situations where no player can significantly improve her payoff by unilaterally deviating from her current strategy, could serve as alternative solution concepts provided that they exist and can be computed efficiently. In this letter, we discuss recent positive algorithmic results for approximate pure Nash equilibria in congestion games.},
+journal = {SIGecom Exch.},
+month = {jun},
+pages = {26–29},
+numpages = {4},
+keywords = {potential games, pure Nash equilibria},
+abbr = {SIGecom}
+}
+
+@inproceedings{Budget_Feasible_Bayesian12,
+author = {Bei, Xiaohui and Chen, Ning and Gravin, Nick and Lu, Pinyan},
+title = {Budget feasible mechanism design: from prior-free to bayesian},
+year = {2012},
+isbn = {9781450312455},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2213977.2214020},
+doi = {10.1145/2213977.2214020},
+abstract = {Budget feasible mechanism considers algorithmic mechanism design
+questions where there is a budget constraint on the total payment of
+the mechanism. An important question in the field is that under
+which valuation domains there exist budget feasible mechanisms that
+admit `small' approximations (compared to a socially optimal
+solution). Singer~[35] showed that additive and submodular
+functions admit a constant approximation mechanism. Recently,
+Dobzinski, Papadimitriou, and Singer~[20] gave an
+$O(log^2(n))$ approximation mechanism for subadditive functions and
+remarked that:
+
+``A fundamental question is whether, regardless
+of computational constraints, a constant-factor budget feasible
+mechanism exists for subadditive
+function."
+
+In this paper, we give the first attempt to this question. We give a
+polynomial time $O(log n/log log n)$ sub-logarithmic
+approximation ratio mechanism for subadditive functions, improving
+the best known ratio $O(log^2(n))$. Further, we connect budget
+feasible mechanism design to the concept of approximate core in
+cooperative game theory, and show that there is a mechanism for
+subadditive functions whose approximation is, via a characterization
+of the integrality gap of a linear program, linear to the largest
+value to which an approximate core exists. Our result implies in
+particular that the class of XOS functions, which is a superclass of
+submodular functions, admits a constant approximation mechanism. We
+believe that our work could be a solid step towards solving the
+above fundamental problem eventually, and possibly, with an
+affirmative answer.},
+booktitle = {Proceedings of the Forty-Fourth Annual ACM Symposium on Theory of Computing},
+pages = {449–458},
+numpages = {10},
+keywords = {approximation, bayesian, budget feasible, mechanism design, prior-free, subadditive, submodular},
+location = {New York, New York, USA},
+series = {STOC '12},
+abbr = {STOC}
+}
+
+@inproceedings{ApproxPNE_CG11,
+author = {Caragiannis, Ioannis and Fanelli, Angelo and Gravin, Nick and Skopalik, Alexander},
+title = {Efficient Computation of Approximate Pure Nash Equilibria in Congestion Games},
+year = {2011},
+isbn = {9780769545714},
+publisher = {IEEE Computer Society},
+address = {USA},
+url = {https://doi.org/10.1109/FOCS.2011.50},
+doi = {10.1109/FOCS.2011.50},
+abstract = {Congestion games constitute an important class of games in which computing an exact or even approximate pure Nash equilibrium is in general {sf PLS}-complete. We present a surprisingly simple polynomial-time algorithm that computes $O(1)$-approximate Nash equilibria in these games. In particular, for congestion games with linear latency functions, our algorithm computes $(2+\epsilon)$-approximate pure Nash equilibria in time polynomial in the number of players, the number of resources and $1/\epsilon$. It also applies to games with polynomial latency functions with constant maximum degree $d$; there, the approximation guarantee is $d^{O(d)}$. The algorithm essentially identifies a polynomially long sequence of best-response moves that lead to an approximate equilibrium, the existence of such short sequences is interesting in itself. These are the first positive algorithmic results for approximate equilibria in non-symmetric congestion games. We strengthen them further by proving that, for congestion games that deviate from our mild assumptions, computing $rho$-approximate equilibria is {sf PLS}-complete for any polynomial-time computable $\rho$.},
+booktitle = {Proceedings of the 2011 IEEE 52nd Annual Symposium on Foundations of Computer Science},
+pages = {532–541},
+numpages = {10},
+keywords = {approximate pure Nash equilibria, computation and complexity, congestion games},
+series = {FOCS '11},
+abbr = {FOCS}
+}
+
+@inproceedings{Profit-Sharing11,
+author = {Augustine, John and Chen, Ning and Elkind, Edith and Fanelli, Angelo and Gravin, Nick and Shiryaev, Dmitry},
+title = {Dynamics of profit-sharing games},
+year = {2011},
+isbn = {9781577355137},
+publisher = {AAAI Press},
+abstract = {An important task in the analysis of multiagent systems is to understand how groups of selfish players can form coalitions, i.e., work together in teams. In this paper, we study the dynamics of coalition formation under bounded rationality. We consider settings where each team's profit is given by a concave function, and propose three profit-sharing schemes, each of which is based on the concept of marginal utility. The agents are assumed to be myopic, i.e., they keep changing teams as long as they can increase their payoff by doing so. We study the properties (such as closeness to Nash equilibrium or total profit) of the states that result after a polynomial number of such moves, and prove bounds on the price of anarchy and the price of stability of the corresponding games.},
+booktitle = {Proceedings of the Twenty-Second International Joint Conference on Artificial Intelligence - Volume Volume One},
+pages = {37–42},
+numpages = {6},
+location = {Barcelona, Catalonia, Spain},
+series = {IJCAI'11},
+abbr = {IJCAI}
+}
+
+@article{k-Paths11,
+author = {Gravin, Nick and Chen, Ning},
+title = {A note on k-shortest paths problem},
+year = {2011},
+issue_date = {May 2011},
+publisher = {John Wiley \& Sons, Inc.},
+address = {USA},
+volume = {67},
+number = {1},
+issn = {0364-9024},
+url = {https://doi.org/10.1002/jgt.20510},
+doi = {10.1002/jgt.20510},
+abstract = {It is well-known that in a directed graph, if deleting any edge will not affect the
+shortest distance between two specific vertices s and t, then there are two edge-disjoint paths
+from s to t and both of them are shortest paths. In this article, we generalize this to shortest k
+edge-disjoint s-t paths for any positive integer k.},
+journal = {J. Graph Theory},
+month = {may},
+pages = {34–37},
+numpages = {4},
+keywords = {shortest path, flow, edge-disjoint, Nash equilibrium, k-paths},
+abbr = {JGT}
+}
+
+@inproceedings{Budget_Feasible_Submodular11,
+author = {Chen, Ning and Gravin, Nick and Lu, Pinyan},
+title = {On the approximability of budget feasible mechanisms},
+year = {2011},
+publisher = {Society for Industrial and Applied Mathematics},
+address = {USA},
+abstract = {Budget feasible mechanisms, recently initiated by Singer (FOCS 2010), extend algorithmic mechanism
+            design problems to a realistic setting with a budget constraint. We consider the problem of designing
+            truthful budget feasible mechanisms for monotone submodular functions: We give a randomized mechanism
+            with an approximation ratio of $7.91$ (improving on the previous best-known result $233.83$), and a
+            deterministic mechanism with an approximation ratio of $8.34$. We also study the knapsack problem,
+            which is a special submodular function, give a ${2 + √2}$ approximation deterministic mechanism
+            (improving on the previous best-known result $5$), and a $3$ approximation randomized mechanism.
+            We provide similar results for an extended knapsack problem with heterogeneous items, where items
+            are divided into groups and one can pick at most one item from each group.Finally we show a lower
+            bound of ${1 + √2}$ for the approximation ratio of deterministic mechanisms and 2 for randomized
+            mechanisms for knapsack, as well as the general monotone submodular functions. Our lower bounds
+            are unconditional, and do not rely on any computational or complexity assumptions.},
+booktitle = {Proceedings of the Twenty-Second Annual ACM-SIAM Symposium on Discrete Algorithms},
+pages = {685–699},
+numpages = {15},
+location = {San Francisco, California},
+series = {SODA '11},
+abbr = {SODA}
+}
+
+@inproceedings{Frugality10,
+author = {Chen, Ning and Elkind, Edith and Gravin, Nick and Petrov, Fedor},
+title = {Frugal Mechanism Design via Spectral Techniques},
+year = {2010},
+isbn = {9780769542447},
+publisher = {IEEE Computer Society},
+address = {USA},
+url = {https://doi.org/10.1109/FOCS.2010.77},
+doi = {10.1109/FOCS.2010.77},
+abstract = {We study the design of truthful mechanisms for set systems, i.e., scenarios where a customer needs to hire a
+            team of agents to perform a complex task. In this setting, frugality [2] provides a measure to evaluate the
+            "cost of truthfulness", that is, the overpayment of a truthful mechanism relative to the "fair" payment. We
+            propose a uniform scheme for designing frugal truthful mechanisms for general set systems. Our scheme is based
+            on scaling the agents' bids using the eigenvector of a matrix that encodes the interdependencies between the
+            agents. We demonstrate that the $r$-out-of-$k$-system mechanism and the $√$-mechanism for buying a path in a
+            graph [18] can be viewed as instantiations of our scheme. We then apply our scheme to two other classes of
+            set systems, namely, vertex cover systems and $k$-path systems, in which a customer needs to purchase $k$
+            edge-disjoint source-sink paths. For both settings, we bound the frugality of our mechanism in terms of the
+            largest eigenvalue of the respective interdependency matrix. We show that our mechanism is optimal for a
+            large subclass of vertex cover systems satisfying a simple local sparsity condition. For $k$-path systems,
+            our mechanism is within a factor of $k+1$ from optimal, moreover, we show that it is, in fact, optimal,
+            when one uses a modified definition of frugality proposed in [10]. Our lower bound argument combines
+            spectral techniques and Young's inequality, and is applicable to all set systems. As both $r$-out-of-$k$
+            systems and single path systems can be viewed as special cases of $k$-path systems, our result improves
+            the lower bounds of [18] and answers several open questions proposed in [18].},
+booktitle = {Proceedings of the 2010 IEEE 51st Annual Symposium on Foundations of Computer Science},
+pages = {755–764},
+numpages = {10},
+series = {FOCS '10},
+abbr = {FOCS}
+}
+
+@inproceedings{d-List-Colorings10,
+author = {Gravin, Nick},
+title = {Time optimal d-list colouring of a graph},
+year = {2010},
+isbn = {3642131816},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-3-642-13182-0_15},
+doi = {10.1007/978-3-642-13182-0_15},
+abstract = {We present the first linear time algorithm for d-list colouring of a graph—i.e. a proper colouring of
+            each vertex v by colours coming from lists $L(v)$ of sizes at least deg(v). Previously,
+            procedures with such complexity were only known for $\Delta$-list colouring, where for each vertex v
+            one has $L(v)\geq\Delta$, the maximum of the vertex degrees. An implementation of the procedure
+            is available.},
+booktitle = {Proceedings of the 5th International Conference on Computer Science: Theory and Applications},
+pages = {156–168},
+numpages = {13},
+location = {Kazan, Russia},
+series = {CSR'10},
+abbr = {CSR}
+}
+
+@inproceedings{CheapLabor09,
+author = {Chen, Ning and Elkind, Edith and Gravin, Nick},
+title = {Refining the Cost of Cheap Labor in Set System Auctions},
+year = {2009},
+isbn = {9783642108402},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-3-642-10841-9_41},
+doi = {10.1007/978-3-642-10841-9_41},
+abstract = {In set system auctions , a single buyer needs to purchase services from multiple competing providers, and the set of providers has a combinatorial structure; a popular example is provided by shortest path auctions [1,7]. In [3] it has been observed that if such an auction is conducted using first-price rules, then, counterintuitively, the buyer's payment may go down if some of the sellers are prohibited from participating in the auction. This reduction in payments has been termed "the cost of cheap labor". In this paper, we demonstrate that the buyer can attain further savings by setting lower bounds on sellers' bids. Our model is a refinement of the original model of [3]: indeed, the latter can be obtained from the former by requiring these lower bounds to take values in $\{0, +infty \}$. We provide upper and lower bounds on the reduction in the buyer's payments in our model for various set systems, such as minimum spanning tree auctions, bipartite matching auctions, single path and k -path auctions, vertex cover auctions, and dominating set auctions. In particular, we illustrate the power of the new model by showing that for vertex cover auctions, in our model the buyer's savings can be linear, whereas in the original model of [3] no savings can be achieved.},
+booktitle = {Proceedings of the 5th International Workshop on Internet and Network Economics},
+pages = {447–454},
+numpages = {8},
+location = {Rome, Italy},
+series = {WINE '09},
+abbr = {WINE}
+}
+
+@INPROCEEDINGS {Cardinal_Complexity23,
+author = {N. Gravin and E. Sun and Z. Tang},
+booktitle = {2023 IEEE 64th Annual Symposium on Foundations of Computer Science (FOCS)},
+title = {Online Ordinal Problems: Optimality of Comparison-based Algorithms and their Cardinal Complexity},
+year = {2023},
+volume = {},
+issn = {},
+pages = {1863-1876},
+abstract = {We consider ordinal online problems, i.e., tasks that only require pairwise comparisons between elements
+            of the input. A classic example is the secretary problem and the game of googol, as well as its multiple
+            combinatorial extensions such as $(J, K)$-secretary, 2-sided game of googol, ordinal-competitive matroid
+            secretary. A natural approach to these tasks is to use ordinal online algorithms that at each step only
+            consider relative ranking among the arrived elements, without looking at the numerical values of the input.
+            We formally study the question of how cardinal algorithms (that can use numerical values of the input) can
+            improve upon ordinal algorithms. We give first a universal construction of the input distribution for any
+            ordinal online problem, such that the advantage of any cardinal algorithm over the ordinal algorithms is
+            at most $1+{\epsilon}$ for arbitrary small $\epsilon\geq 0$. This implies that lower bounds from
+            [Buchbinder, Jain, Singh, MOR 2014], [Nuti and Vondrák, SODA 2023] hold not only against any ordinal algorithm,
+            but also against any online algorithm. Another immediate corollary is that cardinal algorithms are no better
+            than ordinal algorithms in the matroid secretary problem with ordinal-competitive objective of
+            [Soto, Turkieltaub, Verdugo, MOR 2021]. However, the value range of the input elements in our construction is
+            huge: $O(n^3 \cdot n! \cdot n!/\epsilon) \uparrow \uparrow(n-1)$ (tower of exponents)
+            for an input sequence of length n. As a second result, we identify a class of natural ordinal problems and
+            find cardinal algorithm with a matching advantage of $1+\Omega(1/ log(c) N)$, where
+            $log(c) = log log ... log N$ with c iterative logs and c is an arbitrary constant $c \leq n-2$.
+            This suggests that for relatively small input numerical values N the cardinal algorithms may be significantly
+            better than the ordinal algorithms on the ordinal tasks, which are typically assumed to be almost
+            indistinguishable prior to our work. This observation leads to a natural complexity measure
+            (we dub it cardinal complexity) for any given ordinal online task: the minimum size $N(\epsilon)$ of different
+            numerical values in the input such the advantage of cardinal over ordinal algorithms is at most $1+{\epsilon}$
+            for any given $\epsilon\geq 0$. As a third result, we show that the game of googol has much lower cardinal
+            complexity of $O((n/\epsilon)^n)$.
+            },
+keywords = {computer science;poles and towers;games;size measurement;iterative algorithms;complexity theory;task analysis},
+doi = {10.1109/FOCS57990.2023.00113},
+url = {https://doi.ieeecomputersociety.org/10.1109/FOCS57990.2023.00113},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month = {nov},
+abbr = {FOCS}
+}
+
+%huge: $O(n\cdot n\cdot n\cdot n! \cdot n!/{\epsilon}) \uparrow \uparrow(n-1)$ (tower of exponents)
+%for an input sequence of length n. As a second result, we identify a class of natural ordinal problems and
+%find cardinal algorithm with a matching advantage of $1+\Omega(1/\log(c) N})$, where
+%${\log(c) = \log \log \dots \log N}$ with c iterative logs and c is an arbitrary constant $c \leq n-2$.
+%This suggests that for relatively small input numerical values N the cardinal algorithms may be significantly
+%better than the ordinal algorithms on the ordinal tasks, which are typically assumed to be almost
+%indistinguishable prior to our work. This observation leads to a natural complexity measure
+%(we dub it cardinal complexity) for any given ordinal online task: the minimum size $N(\epsilon)$ of different
+%numerical values in the input such the advantage of cardinal over ordinal algorithms is at most $1+{\epsilon}$
+%for any given $\epsilon\ge 0$. As a third result, we show that the game of googol has much lower cardinal
+%complexity of $O((n/\epsilon)^n)$.
+
+
+@inproceedings{ArrivalOrder_BayesianSelection23,
+  author       = {Tomer Ezra, Michal Feldman, Nick Gravin, Zhihao Gavin Tang},
+  editor       = {Nikhil Bansal and Viswanath Nagarajan},
+  title        = {"Who is Next in Line?" On the Significance of Knowing the Arrival
+                  Order in Bayesian Online Settings},
+  abstract     = {We introduce a new measure for the performance of online algorithms in Bayesian settings,
+                  where the input is drawn from a known prior, but the realizations are revealed one-by-one
+                  in an online fashion. Our new measure is called order-competitive ratio. It is defined as
+                  the worst case (over all distribution sequences) ratio between the performance of the best
+                  order-unaware and order-aware algorithms, and quantifies the loss that is incurred due to
+                  lack of knowledge of the arrival order. Despite the growing interest in the role of the
+                  arrival order on the performance of online algorithms, this loss has been overlooked thus far.
+                  We study the order-competitive ratio in the paradigmatic prophet inequality problem, for
+                  the two common objective functions of (i) maximizing the expected value, and (ii) maximizing
+                  the probability of obtaining the largest value; and with respect to two families of algorithms,
+                  namely (i) adaptive algorithms, and (ii) single-threshold algorithms. We provide tight bounds
+                  for all four combinations, with respect to deterministic algorithms. Our analysis requires new
+                  ideas and departs from standard techniques. In particular, our adaptive algorithms inevitably
+                  go beyond single-threshold algorithms. The results with respect to the order-competitive ratio
+                  measure capture the intuition that adaptive algorithms are stronger than single-threshold ones,
+                  and may lead to a better algorithmic advice than the classical competitive ratio measure.},
+  booktitle    = {Proceedings of the 2023 {ACM-SIAM} Symposium on Discrete Algorithms,
+                  {SODA} 2023, Florence, Italy, January 22-25, 2023},
+  pages        = {3759--3776},
+  publisher    = {{SIAM}},
+  year         = {2023},
+  url          = {https://doi.org/10.1137/1.9781611977554.ch145},
+  doi          = {10.1137/1.9781611977554.CH145},
+  timestamp    = {Sat, 30 Sep 2023 09:57:08 +0200},
+  biburl       = {https://dblp.org/rec/conf/soda/EzraFGT23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+  abbr = {SODA}
+}
+
+@inproceedings{BSP_Costs23,
+  author       = {Xiaohui Bei, Nick Gravin, Pinyan Lu, Zhihao Gavin Tang},
+  editor       = {Nikhil Bansal and
+                  Viswanath Nagarajan},
+  title        = {Bidder Subset Selection Problem in Auction Design},
+  abstract     = {Motivated by practical concerns in the online advertising industry, we study a bidder subset selection problem in single-item auctions. In this problem, a large pool of candidate bidders have independent values sampled from known prior distributions. The seller needs to pick a subset of bidders and run a given auction format on the selected subset to maximize her expected revenue. We propose two frameworks for the subset restrictions: (i) capacity constraint on the set of selected bidders; and (ii) incurred costs for the bidders invited to the auction. For the second-price auction with anonymous reserve (SPA-AR), we give constant approximation polynomial time algorithms in both frameworks (in the latter framework under mild assumptions about the market). Our results are in stark contrast to the previous work of Mehta, Nadav, Psomas, Rubinstein [NeurIPS 2020], who showed hardness of approximation for the SPA without a reserve price. We also give complimentary approximation results for other well-studied auction formats such as anonymous posted pricing and sequential posted pricing. On a technical level, we find that the revenue of SPA-AR as a set function $f(S)$ of its bidders $S$ is fractionally-subadditive but not submodular. Our bidder selection problem with invitation costs is a natural question about (approximately) answering a demand oracle for $f(\cdot)$ under a given vector of costs, a common computational assumption in the literature on combinatorial auctions.},
+  booktitle    = {Proceedings of the 2023 {ACM-SIAM} Symposium on Discrete Algorithms,
+                  {SODA} 2023, Florence, Italy, January 22-25, 2023},
+  pages        = {3788--3801},
+  publisher    = {{SIAM}},
+  year         = {2023},
+  url          = {https://doi.org/10.1137/1.9781611977554.ch147},
+  doi          = {10.1137/1.9781611977554.CH147},
+  timestamp    = {Fri, 17 Feb 2023 09:28:57 +0100},
+  biburl       = {https://dblp.org/rec/conf/soda/BeiGLT23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+  abbr         = {SODA}
+}
+
+@inproceedings{StochMatching_EdgeArrivals21,
+  author       = {Nick Gravin and
+                  Zhihao Gavin Tang and
+                  Kangning Wang},
+  editor       = {Nikhil Bansal and
+                  Emanuela Merelli and
+                  James Worrell},
+  title        = {Online Stochastic Matching with Edge Arrivals},
+  abstract     = {Online bipartite matching with edge arrivals is an important extension of the
+                  classic vertex-arrival model of Karp, Vazirani and Vazirani. Finding an algorithm
+                  better than the straightforward greedy strategy remained a major open question
+                  for a long time until a recent negative result by Gamlath et al. (forthcoming FOCS 2019),
+                  who showed that no online algorithm has a competitive ratio better than $0.5$ in the
+                  worst case. In this work, we consider the bipartite matching problem with edge arrivals
+                  in the stochastic framework. We find an online algorithm that on average is $0.506$-competitive.
+                  We give a supplementary upper bound of $2/3$ and also obtain along the way an
+                  interesting auxiliary result that if the initial instance has a $2$-regular stochastic
+                  subgraph, then a natural prune & greedy algorithm matches at least $0.532$-fraction of all vertices.},
+  booktitle    = {48th International Colloquium on Automata, Languages, and Programming,
+                  {ICALP} 2021, July 12-16, 2021, Glasgow, Scotland (Virtual Conference)},
+  series       = {LIPIcs},
+  volume       = {198},
+  pages        = {74:1--74:20},
+  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+  year         = {2021},
+  url          = {https://doi.org/10.4230/LIPIcs.ICALP.2021.74},
+  doi          = {10.4230/LIPICS.ICALP.2021.74},
+  timestamp    = {Wed, 21 Aug 2024 22:46:00 +0200},
+  biburl       = {https://dblp.org/rec/conf/icalp/GravinTW21.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+  abbr         = {ICALP}
+}
+
+@article{Simultaneous_Subadditive20,
+  author       = {Michal Feldman and
+                  Hu Fu and
+                  Nick Gravin and
+                  Brendan Lucier},
+  title        = {Simultaneous auctions without complements are (almost) efficient},
+  abstract     = {A simultaneous item auction is a simple procedure for allocating multiple indivisible
+                  goods to a set of bidders. In a simultaneous auction, every bidder submits bids on all
+                  items simultaneously. The allocation and prices are then resolved for each item separately,
+                  based solely on the bids submitted on that item. Such procedures are similar to auctions
+                  used in practice (e.g. eBay) but are not incentive compatible. We study the efficiency of
+                  Bayesian Nash equilibrium (BNE) outcomes of simultaneous first- and second-price auctions when
+                  bidders have complement-free (a.k.a. subadditive) valuations. We show that the expected social
+                  welfare of any BNE is at least $1/2$ of the optimal social welfare in the case of first-price
+                  auctions, and at least $1/4$ in the case of second-price auctions.},
+  journal      = {Games Econ. Behav.},
+  volume       = {123},
+  pages        = {327--341},
+  year         = {2020},
+  url          = {https://doi.org/10.1016/j.geb.2015.11.009},
+  doi          = {10.1016/J.GEB.2015.11.009},
+  timestamp    = {Mon, 30 Oct 2023 12:08:57 +0100},
+  biburl       = {https://dblp.org/rec/journals/geb/FeldmanFGL20.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+  abbr         = {GEB}
+}
+
+
+@inproceedings{Correlation_Robust_MD18,
+  author       = {Nick Gravin and
+                  Pinyan Lu},
+  editor       = {Artur Czumaj},
+  title        = {Separation in Correlation-Robust Monopolist Problem with Budget},
+  abstract     = {We consider a monopolist seller that has n heterogeneous items to sell to a single buyer.
+                  The seller's goal is to maximize her revenue. We study this problem in the correlation-robust
+                  framework recently proposed by Carroll [Econometrica 2017]. In this framework, the seller only
+                  knows marginal distributions for each separate item but has no information about correlation
+                  across different items in the joint distribution. Any mechanism is then evaluated according
+                  to its expected profit in the worst-case, over all possible joint distributions with given
+                  marginal distributions. Carroll's main result states that in multi-item monopoly problem with
+                  buyer, whose value for a set of items is additive, the optimal correlation-robust mechanism should
+                  sell items separately.
+
+                  We use alternative dual Linear Programming formulation for the optimal correlation-robust mechanism
+                  design problem. This LP can be used to compute optimal mechanisms in general settings. We give an
+                  alternative proof for the additive monopoly problem without constructing worst-case distribution.
+                  As a surprising byproduct of our approach we get that separation result continues to hold even when
+                  buyer has a budget constraint on her total payment. Namely, the optimal robust mechanism splits the
+                  total budget in a fixed way across different items independent of the bids, and then sells each item
+                  separately with a respective per item budget constraint.},
+  booktitle    = {Proceedings of the Twenty-Ninth Annual {ACM-SIAM} Symposium on Discrete
+                  Algorithms, {SODA} 2018, New Orleans, LA, USA, January 7-10, 2018},
+  pages        = {2069--2080},
+  publisher    = {{SIAM}},
+  year         = {2018},
+  url          = {https://doi.org/10.1137/1.9781611975031.135},
+  doi          = {10.1137/1.9781611975031.135},
+  timestamp    = {Sat, 30 Sep 2023 09:57:09 +0200},
+  biburl       = {https://dblp.org/rec/conf/soda/GravinL18.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+  abbr         = {SODA}
+}
+
+@inproceedings{TestingMC_18,
+  author       = {Constantinos Daskalakis and
+                  Nishanth Dikkala and
+                  Nick Gravin},
+  editor       = {S{\'{e}}bastien Bubeck and
+                  Vianney Perchet and
+                  Philippe Rigollet},
+  title        = {Testing Symmetric Markov Chains From a Single Trajectory},
+  abstract = 	 {Classical distribution testing assumes access to i.i.d. samples from the distribution
+                that is being tested. We initiate the study of Markov chain  testing, assuming access to a
+                single trajectory of a Markov Chain. In particular, we observe a single trajectory $X_0,...,X_t,...$
+                of an unknown, symmetric, and finite state Markov Chain $M$. We do not control the starting state $X_0$,
+                and we cannot restart the chain. Given our single trajectory, the goal is to test whether  $M$ is identical
+                to a model Markov Chain $M’$, or far from it under an appropriate notion of difference. We propose a
+                measure of difference between two Markov chains, motivated by the early work of Kazakos [78],  which captures
+                the scaling behavior of the total variation distance between trajectories sampled from the Markov chains as the
+                length of these trajectories grows. We provide efficient testers and information-theoretic lower bounds for
+                testing identity of symmetric Markov chains under our proposed measure of difference, which are tight up to
+                logarithmic factors if the hitting times of the model chain $M’$ is $O(n)$ in the size of
+                the state space $n$.},
+  booktitle    = {Conference On Learning Theory, {COLT} 2018, Stockholm, Sweden, 6-9
+                  July 2018},
+  series       = {Proceedings of Machine Learning Research},
+  volume       = {75},
+  pages        = {385--409},
+  publisher    = {{PMLR}},
+  year         = {2018},
+  url          = {http://proceedings.mlr.press/v75/daskalakis18a.html},
+  timestamp    = {Wed, 03 Apr 2019 18:17:23 +0200},
+  biburl       = {https://dblp.org/rec/conf/colt/DaskalakisDG18.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+  abbr         = {COLT}
+}
+
+@article{Correlation_Robust_SIG18,
+  author       = {Nick Gravin and
+                  Pinian Lu},
+  title        = {Correlation-robust mechanism design},
+  abstract     = {In this letter, we discuss the correlation-robust framework proposed by Carroll [Econometrica 2017]
+                  and our new development [SODA 2018]. Consider a monopolist seller that has $n$ heterogeneous
+                  items to sell to a single buyer with the objective of maximizing the seller’s revenue. In the
+                  correlation-robust framework, the seller only knows marginal distribution of each item but has no
+                  information about the correlation across different items in the joint distribution. Any mechanism is
+                  then evaluated according to its expected profit in the worst-case over all possible joint distributions
+                  with the given marginal distributions. Carroll’s main result states that when the buyer’s value for
+                  any set of her items is the sum of the values of individual items in the set, the optimal correlationrobust
+                  mechanism should sell items separately. We extend this result to the case where the
+                  buyer has a budget constraint on her total payment. Namely, we show that the optimal robust
+                  mechanism splits the total budget in a fixed way across different items independent of the bids,
+                  and then sells each item separately with a per item budget constraint.
+                  We highlight an alternative approach via a dual Linear Programming formulation for the optimal correlation-robust
+                  mechanism design problem. This LP can be used to compute optimal
+                  mechanisms in general (other than additive) settings. It also yields an alternative proof for the
+                  additive monopoly problem without constructing the worst-case distribution and allows us to
+                  extend the proof to the budget setting.},
+  journal      = {SIGecom Exch.},
+  volume       = {16},
+  number       = {2},
+  pages        = {45--52},
+  year         = {2018},
+  url          = {https://doi.org/10.1145/3331041.3331047},
+  doi          = {10.1145/3331041.3331047},
+  timestamp    = {Thu, 04 Jun 2020 19:43:18 +0200},
+  biburl       = {https://dblp.org/rec/journals/sigecom/GravinL18.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+  abbr         = {SIGecom}
+}
+
+@inproceedings{MWA_LB17,
+  author       = {Nick Gravin and
+                  Yuval Peres and
+                  Balasubramanian Sivan},
+  editor       = {Ioannis Chatzigiannakis and
+                  Piotr Indyk and
+                  Fabian Kuhn and
+                  Anca Muscholl},
+  title        = {Tight Lower Bounds for Multiplicative Weights Algorithmic Families},
+  abstract     = {We study the fundamental problem of prediction with expert advice and develop
+                  regret lower bounds for a large family of algorithms for this problem. We
+                  develop simple adversarial primitives, that lend themselves to
+                  various combinations leading to sharp lower bounds for many algorithmic
+                  families. We use these primitives to show that the classic
+                  Multiplicative Weights Algorithm (MWA) has a regret of $√(T log(k) /2)$, there by
+                  completely closing the gap between upper and lower bounds. We further show a regret lower
+                  bound of $2/3 √(T log(k) /2)$ for a much more general family of
+                  algorithms than MWA, where the learning rate can be arbitrarily varied over
+                  time, or even picked from arbitrary distributions over time. We also use our
+                  primitives to construct adversaries in the geometric horizon setting for MWA to
+                  precisely characterize the regret at ${0.391/√\delta}$ for the case
+                  of $2$ experts and a lower bound of ${0.5√(log(k) / (2\delta))}$
+                  for the case of arbitrary number of experts $k$.},
+  booktitle    = {44th International Colloquium on Automata, Languages, and Programming,
+                  {ICALP} 2017, July 10-14, 2017, Warsaw, Poland},
+  series       = {LIPIcs},
+  volume       = {80},
+  pages        = {48:1--48:14},
+  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+  year         = {2017},
+  url          = {https://doi.org/10.4230/LIPIcs.ICALP.2017.48},
+  doi          = {10.4230/LIPICS.ICALP.2017.48},
+  timestamp    = {Tue, 11 Feb 2020 15:52:14 +0100},
+  biburl       = {https://dblp.org/rec/conf/icalp/GravinPS17.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+  abbr         = {ICALP}
+}
+
+@article{CWE16,
+  author       = {Michal Feldman and
+                  Nick Gravin and
+                  Brendan Lucier},
+  title        = {Combinatorial Walrasian Equilibrium},
+  abstract     = {We study a combinatorial market design problem, where a collection of indivisible objects is
+                  to be priced and sold to potential buyers subject to equilibrium constraints. The classic
+                  solution concept for such problems is Walrasian equilibrium (WE), which provides a simple and
+                  transparent pricing structure that achieves optimal social welfare. The main weakness of the
+                  WE notion is that it exists only in very restrictive cases. To overcome this limitation, we
+                  introduce the notion of a combinatorial Walrasian equilibium (CWE), a natural relaxation of WE.
+                  The difference between a CWE and a (noncombinatorial) WE is that the seller can package the
+                  items into indivisible bundles prior to sale, and the market does not necessarily clear. We
+                  show that every valuation profile admits a CWE that obtains at least half the optimal
+                  (unconstrained) social welfare. Moreover, we devise a polynomial time algorithm that, given
+                  an arbitrary allocation, computes a CWE that achieves at least half its welfare. Thus, the
+                  economic problem of finding a CWE with high social welfare reduces to the algorithmic
+                  problem of social-welfare approximation. In addition, we show that every valuation profile
+                  admits a CWE that extracts a logarithmic fraction of the optimal welfare as revenue. Finally,
+                  to motivate the use of bundles, we establish strong lower bounds when the seller is restricted
+                  to using item prices only. The strength of our results derives partly from their generality---our
+                  results hold for arbitrary valuations that may exhibit complex combinations of substitutes and complements.},
+  journal      = {{SIAM} J. Comput.},
+  volume       = {45},
+  number       = {1},
+  pages        = {29--48},
+  year         = {2016},
+  url          = {https://doi.org/10.1137/13094339X},
+  doi          = {10.1137/13094339X},
+  timestamp    = {Fri, 02 Jun 2023 16:54:32 +0200},
+  biburl       = {https://dblp.org/rec/journals/siamcomp/FeldmanGL16.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+  abbr         = {SICOMP}
+}
+
+@article{Profit-Sharing10,
+  title={Dynamics of Profit-Sharing Games},
+  abstract={Abstract An important task in the analysis of multiagent systems is to understand how groups of selfish
+  players can form coalitions, i.e., work together in teams. In this paper, we study the dynamics of coalition
+  formation under bounded rationality. We consider settings whereby each team’s profit is given by a submodular
+  function and propose three profit-sharing schemes, each of which is based on the concept of marginal utility.
+  The agents are assumed to be myopic, i.e., they keep changing teams as long as they can increase their payoff
+  by doing so. We study the properties (such as closeness to Nash equilibrium or total profit) of the states that
+  result after a polynomial number of such moves, and prove bounds on the price of anarchy and the price of stability
+  of the corresponding games.},
+  author={John E. Augustine and Ning Chen and Edith Elkind and Angelo Fanelli and Nick Gravin and Dmitry Shiryaev},
+  journal={Internet Mathematics},
+  year={2010},
+  volume={11},
+  pages={1 - 22},
+  url={https://api.semanticscholar.org/CorpusID:9460258},
+  abbr={Int. Math}
+}
+
+@inproceedings{ApproxNE_CSG14,
+  author       = {Ioannis Caragiannis and
+                  Angelo Fanelli and
+                  Nick Gravin},
+  editor       = {Ron Lavi},
+  title        = {Short Sequences of Improvement Moves Lead to Approximate Equilibria
+                  in Constraint Satisfaction Games},
+  abstract     = {We present an algorithm that computes approximate pure Nash equilibria in a broad class of constraint
+                  satisfaction games that generalize the well-known cut and party affiliation games. Our results improve
+                  previous ones by Bhalgat et al. (EC 10) in terms of the obtained approximation guarantee. More
+                  importantly, our algorithm identifies a polynomially-long sequence of improvement moves from any initial
+                  state to an approximate equilibrium in these games. The existence of such short sequences is an
+                  interesting structural property which, to the best of our knowledge, was not known before. Our techniques
+                  adapt and extend our previous work for congestion games (FOCS 11) but the current analysis is considerably
+                  simpler.},
+  booktitle    = {Algorithmic Game Theory - 7th International Symposium, {SAGT} 2014,
+                  Haifa, Israel, September 30 - October 2, 2014. Proceedings},
+  series       = {Lecture Notes in Computer Science},
+  volume       = {8768},
+  pages        = {49--60},
+  publisher    = {Springer},
+  year         = {2014},
+  url          = {https://doi.org/10.1007/978-3-662-44803-8\_5},
+  doi          = {10.1007/978-3-662-44803-8\_5},
+  timestamp    = {Sat, 05 Sep 2020 18:04:44 +0200},
+  biburl       = {https://dblp.org/rec/conf/sagt/CaragiannisFG14.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+  abbr         = {SAGT}
+}
+
+@article{Tillings_Polytope12,
+  author       = {Nick Gravin and
+                  Sinai Robins and
+                  Dmitry Shiryaev},
+  title        = {Translational tilings by a polytope, with multiplicity},
+  abstract     = {We study the problem of covering $R^d$ by overlapping translates of a convex body $P$,
+                  such that almost every point of $R^d$ is covered exactly $k$ times. Such a covering of
+                  Euclidean space by translations is called a $k$-tiling. The investigation of tilings
+                  (i.e. $1$-tilings in this context) by translations began with  the work of Fedorov~[5]
+                  and Minkowski~[15]. Here we extend the investigations of Minkowski to $k$-tilings by
+                  proving that if a convex body $k$-tiles $R^d$ by translations, then it is centrally symmetric,
+                  and its facets are also centrally symmetric.  These are the analogues of Minkowski's conditions
+                  for $1$-tiling polytopes. Conversely, in the case that $P$ is a rational polytope, we also prove
+                  that if $P$ is centrally symmetric and has centrally symmetric facets, then $P$ must $k$-tile
+                  $R^d$ for some positive integer $k$.},
+  journal      = {Comb.},
+  volume       = {32},
+  number       = {6},
+  pages        = {629--649},
+  year         = {2012},
+  url          = {https://doi.org/10.1007/s00493-012-2860-3},
+  doi          = {10.1007/S00493-012-2860-3},
+  timestamp    = {Wed, 22 Jul 2020 22:02:14 +0200},
+  biburl       = {https://dblp.org/rec/journals/combinatorica/GravinRS12.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+  abbr         = {Combinatorica}
+}
+
+
+@inproceedings{CNN_Continuous10,
+  author       = {John Augustine and
+                  Nick Gravin},
+  editor       = {Otfried Cheong and
+                  Kyung{-}Yong Chwa and
+                  Kunsoo Park},
+  title        = {On the Continuous {CNN} Problem},
+  abstract     = {In the (discrete) CNN problem, online requests appear as points in $R^2$. Each request must be
+                  served before the next one is revealed. We have a server that can serve a request simply by
+                  aligning either its x or y coordinate with the request. The goal of the online algorithm is to
+                  minimize the total $L_1$ distance traveled by the server to serve all the requests. The best known
+                  competitive ratio for the discrete version is 879 (due to Sitters and Stougie).
+
+                  We study the continuous version, in which, the request can move continuously in $R^2$ and the server
+                  must continuously serve the request. A simple adversarial argument shows that the lower bound on the
+                  competitive ratio of any online algorithm for the continuous CNN problem is 3. Our main contribution
+                  is an online algorithm with competitive ratio. Our analysis is tight. The continuous version
+                  generalizes the discrete orthogonal CNN problem, in which every request must be x or y aligned with
+                  the previous request. Therefore, our result improves upon the previous best known competitive ratio
+                  of 9 for the discrete orthogonal CNN problem (due to Iwama and Yonezawa).},
+  booktitle    = {Algorithms and Computation - 21st International Symposium, {ISAAC}
+                  2010, Jeju Island, Korea, December 15-17, 2010, Proceedings, Part
+                  {II}},
+  series       = {Lecture Notes in Computer Science},
+  volume       = {6507},
+  pages        = {254--265},
+  publisher    = {Springer},
+  year         = {2010},
+  url          = {https://doi.org/10.1007/978-3-642-17514-5\_22},
+  doi          = {10.1007/978-3-642-17514-5\_22},
+  timestamp    = {Tue, 14 May 2019 10:00:50 +0200},
+  biburl       = {https://dblp.org/rec/conf/isaac/AugustineG10.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+  abbr         = {ISAAC}
+}

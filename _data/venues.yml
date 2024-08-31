@@ -1,9 +1,23 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"ArXiv":
+  url: https://arxiv.org/
+  color: LightGray
 
-"PhysRev":
-  url: https://journals.aps.org/
+"WWW 24":
+  url: https://www2024.thewebconf.org/
+  color: Orange
 
-"Vision":
-  color: "#009f36"
+"WWW 23":
+  url: https://www2023.thewebconf.org/
+  color: Orange
+
+"ESA 2023":
+  url: https://www.dagstuhl.de/dagpub/978-3-95977-295-2
+  color: SkyBlue
+
+"NeurIPS 2023":
+  url: https://neurips.cc/Conferences/2023
+  color: HotPink
+
+"AAAI 2024":
+  url: https://aaai.org/aaai-conference/
+  color: Orchid
