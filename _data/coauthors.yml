@@ -1,3 +1,112 @@
+"feldman":
+  - firstname: ["Michal"]
+    url: https://www.mfeldman.sites.tau.ac.il/
+
+"lucier":
+  - firstname: ["Brendan"]
+    url: https://www.microsoft.com/en-us/research/people/brlucier/
+
+"lu":
+  - firstname: ["Pinyan"]
+    url: http://pinyanlu.com/
+
+"bei":
+  - firstname: ["Xiaohui"]
+    url: https://xiaohuibei.com/
+
+"caragiannis":
+  - firstname: ["Ioannis", "Iannis"]
+    url: https://cs.au.dk/~iannis/
+
+"gkatzelis":
+  - firstname: ["Vasilis"]
+    url: https://www.cs.drexel.edu/~vg399/
+
+"schoepflin":
+  - firstname: ["Daniel"]
+    url: https://danschoepflin.github.io/
+
+"ezra":
+  - firstname: ["Tomer"]
+    url: https://tomer-ezra.github.io/
+
+"fu":
+  - firstname: ["Hu"]
+    url: https://www.fuhuthu.com/
+
+"azar":
+  - firstname: ["Yossi"]
+    url: https://www.cs.tau.ac.il/~azar/
+
+"sivan":
+  - firstname: ["Balasubramanian", "Balu"]
+    url: https://pages.cs.wisc.edu/~balu2901/
+
+"robins":
+  - firstname: ["Sinai"]
+    url: https://sites.google.com/site/sinairobins
+
+"lasserre":
+  - firstname: ["Jean", "Jean Bernard"]
+    url: https://fr.wikipedia.org/wiki/Jean_Bernard_Lasserre
+
+"fanelli":
+  - firstname: ["Angelo"]
+    url: https://sites.google.com/view/angelofanelli
+
+"elkind":
+  - firstname: ["Edith"]
+    url: https://www.cs.ox.ac.uk/people/edith.elkind/
+
+"augustine":
+  - firstname: ["John", "John E."]
+    url: http://www.cse.iitm.ac.in/~augustine/
+
+"petrov":
+  - firstname: ["Fedor"]
+    url: https://math-cs.spbu.ru/en/people/petrov-f-v/
+
+"kolountzakis":
+  - firstname: ["Mihail N.", "Mihail"]
+    url: https://eigen-space.org/
+
+"skopalik":
+  - firstname: ["Alexander"]
+    url: https://research.utwente.nl/en/persons/alexander-skopalik
+
+
+"wang":
+  - firstname: ["Kangning"]
+    url: https://sites.google.com/view/kangningwang/home
+  - firstname: ["Zihe"]
+    url: https://gsai.ruc.edu.cn/english/wangzihe
+
+"munagala":
+  - firstname: ["Kamesh"]
+    url: https://www.kameshmunagala.org/
+
+
+
+"kwok":
+  - firstname: ["Tsz Chiu"]
+    url: https://itcs.sufe.edu.cn/54/20/c10495a152608/page.htm
+
+"guo":
+  - firstname: ["Siyao"]
+    url: https://sites.google.com/site/siyaoguo/
+
+"immorlica":
+  - firstname: ["Nicole"]
+    url: https://immorlica.com/
+
+"cheng":
+  - firstname: ["Yu"]
+    url: https://cs.brown.edu/people/ycheng79/
+
+"xu":
+  - firstname: ["Yixuan", "Yixuan Even"]
+    url: https://yixuanevenxu.github.io/
+
 "zhou":
   - firstname: ["Renfei"]
     url: https://orbitingflea.github.io/
@@ -5,3 +114,11 @@
 "tang":
   - firstname: ["Zhihao", "Zhihao Gavin"]
     url: http://zhihaotang.com/index.html
+
+"daskalakis":
+  - firstname: ["Constantinos"]
+    url: https://people.csail.mit.edu/costis/
+
+"shapiro":
+  - firstname: ["Boris", "Boris Z."]
+    url: https://en.wikipedia.org/wiki/Boris_Shapiro        

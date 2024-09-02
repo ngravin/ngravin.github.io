@@ -13,7 +13,7 @@ profile:
     <p>100 Wudong Road,</p>
     <p>Yangpu district,</p>
     <p>Shanghai 200433, China</p>
-    <p>Emails: ngravin [at] gmail</p>  
+    <p>Email: ngravin [at] gmail</p>  
 
 
 news: true # includes a list of news items

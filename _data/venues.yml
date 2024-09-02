@@ -6,6 +6,14 @@
   url: https://focs.computer.org/2023/
   color: Blue
 
+"FOCS 11":
+  url: https://ieee-focs.org/focs2011/
+  color: Blue  
+
+"FOCS 10":
+  url: https://ieee-focs.org/focs2010/
+  color: Blue
+
 "WWW 24":
   url: https://www2024.thewebconf.org/
   color: Orange
