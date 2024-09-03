@@ -147,3 +147,23 @@
 {% if page.tikzjax %}
   <link defer rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
 {% endif %}
+
+<style>
+  .dropdown-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+  }
+</style>
+
+<script>
+  function toggleDropdown(id) {
+    var content = document.getElementById(id);
+    if (content.style.display === "none" || content.style.display === "") {
+      content.style.display = "block";
+    } else {
+      content.style.display = "none";
+    }
+  }
+</script>

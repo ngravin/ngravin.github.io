@@ -8,11 +8,106 @@
 
 "FOCS 11":
   url: https://ieee-focs.org/focs2011/
-  color: Blue  
+  color: Blue
 
 "FOCS 10":
   url: https://ieee-focs.org/focs2010/
   color: Blue
+
+"SODA 23":
+  url: https://www.siam.org/conferences-events/past-event-archive/soda23/
+  color: "#6960EC"
+
+"SODA 21":
+  url: https://epubs.siam.org/doi/book/10.1137/1.9781611976465
+  color: "#6960EC"
+
+"SODA 19":
+  url: https://epubs.siam.org/doi/book/10.1137/1.9781611975482
+  color: "#6960EC"
+
+"SODA 18":
+  url: https://epubs.siam.org/doi/book/10.1137/1.9781611975031
+  color: "#6960EC"
+
+"SODA 16":
+  url: https://epubs.siam.org/doi/10.1137/1.9781611974331
+  color: "#6960EC"
+
+"SODA 15":
+  url: https://epubs.siam.org/doi/book/10.1137/1.9781611973730
+  color: "#6960EC"
+
+"SODA 11":
+  url: https://epubs.siam.org/doi/10.1137/1.9781611973082
+  color: "#6960EC"
+
+"STOC 12":
+  url: https://acm-stoc.org/stoc2012/
+  color: "#000080"
+
+"STOC 13":
+  url: https://acm-stoc.org/stoc2013/
+  color: "#000080"
+
+"STOC 14":
+  url: https://acm-stoc.org/stoc2014/
+  color: "#000080"
+
+"EC 22":
+  url: https://ec22.sigecom.org/index.html
+  color: Turquoise
+
+"EC 20":
+  url: https://ec20.sigecom.org/index.html
+  color: Turquoise
+
+"EC 19":
+  url: https://www.sigecom.org/ec19/
+  color: Turquoise
+
+"EC 16":
+  url: https://www.sigecom.org/ec16/
+  color: Turquoise
+
+"EC 15":
+  url: https://www.sigecom.org/ec15/
+  color: Turquoise
+
+"EC 12":
+  url: https://www.sigecom.org/ec12/
+  color: Turquoise
+
+"WINE 22":
+  url: https://www.cs.rpi.edu/wine2022/
+  color: "#387C44"
+
+"WINE 21":
+  url: https://hpi.de/wine2021/
+  color: "#387C44"
+
+"WINE 18":
+  url: https://www.cs.ox.ac.uk/conferences/wine2018/
+  color: "#387C44"
+
+"WINE 09":
+  color: "#387C44"
+
+"ICALP 21":
+  url: https://easyconferences.eu/icalp2021/
+  color: "#79BAEC"
+
+"ICALP 17":
+  url: https://drops.dagstuhl.de/entities/volume/LIPIcs-volume-80
+  color: "#79BAEC"
+
+"ICALP 13":
+  url: https://www.icalp2013.lu.lv/
+  color: "#79BAEC"
+
+"COLT 18":
+  url: https://www.learningtheory.org/colt2018/
+  color: "#307D7E"
 
 "WWW 24":
   url: https://www2024.thewebconf.org/
@@ -22,14 +117,25 @@
   url: https://www2023.thewebconf.org/
   color: Orange
 
-"ESA 2023":
-  url: https://www.dagstuhl.de/dagpub/978-3-95977-295-2
-  color: SkyBlue
-
-"NeurIPS 2023":
-  url: https://neurips.cc/Conferences/2023
+"SAGT 22":
+  url: https://www.essex.ac.uk/events/2022/09/11/sagt-2022
   color: HotPink
 
-"AAAI 2024":
-  url: https://aaai.org/aaai-conference/
-  color: Orchid
+"SAGT 17":
+  url: https://cs.gssi.it/sagt2017/program.php
+  color: HotPink
+
+"SAGT 14":
+  url: https://gametheorysociety.org/conferences/7th-international-symposium-on-algorithmic-game-theory-sagt14/
+  color: HotPink
+
+"IJCAI 11":
+  url: https://www.ijcai.org/proceedings/2011
+  color: "#B5EAAA"
+
+"CSR 10":
+  color: "#F5F5DC"
+
+"ISAAC 10":
+  url: https://www.issac-conference.org/2010/
+  color: "#BCE954"

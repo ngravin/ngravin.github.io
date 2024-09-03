@@ -59,10 +59,49 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Publications by Topics:</a>
       </h2>
+      <ul style="list-style-type:disc;">
+        <li>
+            <!-- Bayesian Selection papers -->
+              {% if page.selected_papers %}
+              <h4>
+              <a href="javascript:void(0);" onclick="toggleDropdown('bayesopt')" style="color: inherit"><b>Bayesian Optimization & Online Algorithms</b></a>
+              </h4>
+                <div id="bayesopt" class="dropdown-content">
+                  {% include selected_BS_papers.liquid %}
+                </div>
+              {% endif %}
+        </li>
+        <li>  <!-- Robust Optimization and Mechanisms papers -->
+          {% if page.selected_papers %}
+          <h4>
+          <a href="javascript:void(0);" onclick="toggleDropdown('robust')" style="color: inherit"><b>Robust Mechanisms and Optimization</b></a>
+          </h4>
+            <div id="robust" class="dropdown-content">
+              {% include selected_robust_papers.liquid %}
+            </div>
+          {% endif %}
+        </li>
+        <li> <!-- Worst-Case MD papers -->
+          {% if page.selected_papers %}
+          <h4>
+          <a href="javascript:void(0);" onclick="toggleDropdown('worst-case')" style="color: inherit"><b>Worst-Case Mechanism Design</b></a>
+          </h4>
+            <div id="worst-case" class="dropdown-content">
+              {% include selected_worst-case_papers.liquid %}
+            </div>
+          {% endif %}
+        </li>
+      </ul>
       {% include selected_papers.liquid %}
     {% endif %}
+
+
+
+
+
+
 
     <!-- Social -->
     {% if page.social %}
