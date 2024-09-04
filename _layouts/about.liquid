@@ -48,13 +48,6 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
-    <!-- Latest posts -->
-    {% if site.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
@@ -84,14 +77,64 @@ layout: default
           {% endif %}
         </li>
         <li> <!-- Worst-Case MD papers -->
-          {% if page.selected_papers %}
-          <h4>
-          <a href="javascript:void(0);" onclick="toggleDropdown('worst-case')" style="color: inherit"><b>Worst-Case Mechanism Design</b></a>
-          </h4>
+             {% if page.selected_papers %}
+             <h4>
+                <a href="javascript:void(0);" onclick="toggleDropdown('worst-case')" style="color: inherit"><b>Worst-Case Mechanism Design</b></a>
+             </h4>
             <div id="worst-case" class="dropdown-content">
               {% include selected_worst-case_papers.liquid %}
             </div>
           {% endif %}
+        </li>
+        <li> <!-- Learning papers -->
+             {% if page.selected_papers %}
+              <h4>
+                <a href="javascript:void(0);" onclick="toggleDropdown('learning')" style="color: inherit"><b>Learning Theory</b></a>
+              </h4>
+              <div id="learning" class="dropdown-content">
+                {% include selected_learning_papers.liquid %}
+              </div>
+          {% endif %}
+        </li>
+        <li> <!-- Computation of Approximate Nash Equilibria papers -->
+             {% if page.selected_papers %}
+              <h4>
+                <a href="javascript:void(0);" onclick="toggleDropdown('nash-comp')" style="color: inherit"><b>Approximate Nash Equilibria</b></a>
+              </h4>
+              <div id="nash-comp" class="dropdown-content">
+                {% include selected_nash-comp_papers.liquid %}
+              </div>
+          {% endif %}
+        </li>
+        <li> <!-- Fair-Division papers -->
+             {% if page.selected_papers %}
+              <h4>
+                <a href="javascript:void(0);" onclick="toggleDropdown('fair-division')" style="color: inherit"><b>Fair-Division</b></a>
+              </h4>
+                      <div id="fair-division" class="dropdown-content">
+                        {% include selected_fair-division_papers.liquid %}
+                      </div>
+          {% endif %}
+        </li>
+        <li> <!-- Convex Geometry papers -->
+                     {% if page.selected_papers %}
+                      <h4>
+                        <a href="javascript:void(0);" onclick="toggleDropdown('convex-geometry')" style="color: inherit"><b>Convex Geometry</b></a>
+                      </h4>
+                              <div id="convex-geometry" class="dropdown-content">
+                                {% include selected_convex-geometry_papers.liquid %}
+                              </div>
+                  {% endif %}
+        </li>
+        <li> <!-- Graph Theory papers -->
+                     {% if page.selected_papers %}
+                      <h4>
+                        <a href="javascript:void(0);" onclick="toggleDropdown('graph-theory')" style="color: inherit"><b>Graph Theory</b></a>
+                      </h4>
+                              <div id="graph-theory" class="dropdown-content">
+                                {% include selected_graph-theory_papers.liquid %}
+                              </div>
+                  {% endif %}
         </li>
       </ul>
       {% include selected_papers.liquid %}
