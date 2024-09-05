@@ -1,28 +1,31 @@
 ---
 layout: profiles
 permalink: /people/
-title: people
-description: members of the lab or group
+title: People
+description: My students and collaborators
 nav: true
 nav_order: 4
+
 
 profiles:
   # if you want to include more than one profile, just replicate the following block
   # and create one content file for each profile inside _pages/
   - align: right
-    image: prof_pic.jpg
-    content:
-    image_circular: false # crops the image to make it circular
+    image: Zhiqi_silly.jpg
+    content: about_Zhiqi.md
+    image_circular: true # crops the image to make it circular
     more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
-  - align: left
-    image: prof_pic.jpg
-    content: 
-    image_circular: false # crops the image to make it circular
+      <p>email: wangzhiq19 at 126.com</p>
+  - align: right
+    image: Jianhao_profile.jpg
+    content: about_Jianhao.md
+    image_circular: true # crops the image to make it circular
     more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+      <p>email: jianhao.jia AT outlook.com</p>
+  - align: right
+    image: Lihao_photo.jpg
+    content: about_Lihao.md
+    image_circular: true # crops the image to make it circular
+    more_info: >
+      <p>email: sufelihao AT Outlook.com</p>
 ---

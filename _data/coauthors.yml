@@ -1,3 +1,7 @@
+"jia":
+   - firstname: ["Jianhao"]
+     url: https://jianhao-jia.github.io/
+
 "feldman":
   - firstname: ["Michal"]
     url: https://www.mfeldman.sites.tau.ac.il/
@@ -80,6 +84,8 @@
     url: https://sites.google.com/view/kangningwang/home
   - firstname: ["Zihe"]
     url: https://gsai.ruc.edu.cn/english/wangzihe
+  - firstname: ["Zhiqi"]
+    url: https://zhiqi-wang.github.io/
 
 "munagala":
   - firstname: ["Kamesh"]
@@ -121,4 +127,4 @@
 
 "shapiro":
   - firstname: ["Boris", "Boris Z."]
-    url: https://en.wikipedia.org/wiki/Boris_Shapiro        
+    url: https://en.wikipedia.org/wiki/Boris_Shapiro
